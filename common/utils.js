@@ -47,6 +47,14 @@ export function renderDisplayPage(harrayForResults) {
         resourceNeighborhood.classList = 'neighborhood';
         resourceNeighborhood.textContent = resource.neighborhood;
         resourceListItem.appendChild(resourceNeighborhood);
+
+        const resourceCheckBox = document.createElement('input');
+        resourceCheckBox.type = 'checkbox';
+        resourceCheckBox.classList = 'checkbox';
+
+        //need to add checkbox functionality here
+        
+        resourceListItem.appendChild(resourceCheckBox);
     }
 }
 function findById(array, id) {
