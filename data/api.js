@@ -9,7 +9,7 @@ const avelGordlyCenterForHealing = {
     website: 'www.ohsuhealth.com/counseling',
     neighborhood: 'SW',
     type: ['medical']
-}
+};
 const budClarkClinic = {
     id: 'bud-clark-clinic',
     name: 'Bud Clark Clinic',
@@ -21,7 +21,7 @@ const budClarkClinic = {
     website: '',
     neighborhood: 'NW',
     type: ['medical']
-}
+};
 const cascadiaBHUrgentWalkInClinic = {
     id: 'cascadia-b-h-urgent-walk-in-clinic',
     name: 'Cascadia BH Urgent Walk-In Clinic',
@@ -33,7 +33,7 @@ const cascadiaBHUrgentWalkInClinic = {
     website: 'www.cascadiabhc.org',
     neighborhood: 'SE',
     type: ['medical']
-}
+};
 const northByNortheastCommunityHealthCenter = {
     id: 'north-by-northeast-comunit-health-center',
     name: 'North By Northeast Community Health Center',
@@ -45,7 +45,7 @@ const northByNortheastCommunityHealthCenter = {
     website: 'www.nxneclinic.org',
     neighborhood: 'NE',
     type: ['medical']
-}
+};
 const bethlehemChildrensClothesCloset = {
     id: 'bethlehem-childrens-clothes-closet',
     name: 'Bethlehem Childrens Clothes Closet',
@@ -57,7 +57,7 @@ const bethlehemChildrensClothesCloset = {
     website: 'www.smpdx.org',
     neighborhood: 'SE',
     type: ['clothing']
-}
+};
 const mainspring = {
     id: 'mainspring',
     name: 'Mainspring',
@@ -69,7 +69,7 @@ const mainspring = {
     website: 'www.mainspringpdx.org',
     neighborhood: 'NE',
     type: ['clothing']
-}
+};
 const stAndreBessette = {
     id: 'st-andre-bessette',
     name: 'St. Andre Bessette',
@@ -81,7 +81,7 @@ const stAndreBessette = {
     website: 'www.saintandrechurch.org',
     neighborhood: 'SW',
     type: ['clothing']
-}
+};
 const transitionProjects = {
     id: 'transition-projects',
     name: 'Transition Projects',
@@ -92,8 +92,8 @@ const transitionProjects = {
     transit: "Bus: 17, 33, MAX",
     website: 'www.tprojects.org',
     neighborhood: 'NW',
-    type: ['clothing']
-}
+    type: ['clothing', 'shelter']
+};
 const allSaintsEpiscopalChurch = {
     id: 'all-saints-episcopal-church',
     name: 'All Saints Episcopal Church',
@@ -105,7 +105,7 @@ const allSaintsEpiscopalChurch = {
     website: 'www.allsaintspdx.org',
     neighborhood: 'SE',
     type: ['meal']
-}
+};
 const blanchetHouseOfHospitality = {
     id: 'blanchet-house-of-hospitality',
     name: 'Blanchet House of Hospitality',
@@ -117,7 +117,7 @@ const blanchetHouseOfHospitality = {
     website: 'www.blanchethouse.org',
     neighborhood: 'NW',
     type: ['meal']
-}
+};
 const firstBaptistChurch = {
     id: 'first-baptist-church',
     name: 'First Baptist Church',
@@ -129,7 +129,7 @@ const firstBaptistChurch = {
     website: 'www.fbc-portland.org',
     neighborhood: 'SW',
     type: ['meal']
-}
+};
 const graceMemorialEpiscopalChurch = {
     id: 'grace-memorial-episcopal-church',
     name: 'Grace Memorial Episcopal Church',
@@ -141,7 +141,7 @@ const graceMemorialEpiscopalChurch = {
     website: 'www.grace-memorial.org',
     neighborhood: 'NE',
     type: ['meal']
-}
+};
 const  cityTeamPortland = {
     id: 'city-team-portland',
     name: 'City Team Portland',
@@ -153,7 +153,7 @@ const  cityTeamPortland = {
     website: 'www.cityteam.org',
     neighborhood: 'SE',
     type: ['shelter']
-}
+};
 const humanSolutionsFamilyCenter = {
     id: 'human-solutions-family-center',
     name: 'Human Solutions Family Center',
@@ -162,10 +162,10 @@ const humanSolutionsFamilyCenter = {
     description: '24-hour shelter. Lilac Medows for families with at least on child under 18. Gresham Women\'s Shelter for self-ident. women. No walk-up access. Call 211 for eligibility/intake',
     hours: 'call 211 for intake',
     transit: 'confidential location',
-    website: n/a,
+    website: 'unavailable',
     neighborhood: 'NE',
     type: ['shelter']
-}
+};
 const portlandRescueMission = {
     id: 'portland-rescue-mission',
     name: 'Portlan Rescue Mission',
@@ -177,17 +177,6 @@ const portlandRescueMission = {
     website: 'www.portlandrescuemission.org',
     neighborhood: 'SW',
     type: ['shelter']
-}
-const  transitionProjectsShelter= {
-    id: '',
-    name: ,
-    phone: ,
-    address: ,
-    description: ,
-    hours: ,
-    transit: ,
-    website: ,
-    neighborhood: ,
-    type: ['shelter']
-}
-const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, cityTeamPortland ]
+};
+
+const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
