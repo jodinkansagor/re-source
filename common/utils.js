@@ -1,5 +1,3 @@
-
-
 export function renderDisplayPage(harrayForResults) {
     for (let i = 0; i < harrayForResults.length; i++) {
         const resource = harrayForResults[i];
