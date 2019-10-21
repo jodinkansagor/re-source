@@ -47,8 +47,6 @@ export function renderDisplayPage(harrayForResults) {
         resourceNeighborhood.classList = 'neighborhood';
         resourceNeighborhood.textContent = resource.neighborhood;
         resourceListItem.appendChild(resourceNeighborhood);
-<<<<<<< HEAD
-=======
 
         const resourceCheckBox = document.createElement('input');
         resourceCheckBox.type = 'checkbox';
@@ -57,7 +55,6 @@ export function renderDisplayPage(harrayForResults) {
         //need to add checkbox functionality here
         
         resourceListItem.appendChild(resourceCheckBox);
->>>>>>> 97e077065ab062607a94f6efc9ef8914eaabcd4c
     }
 }
 function findById(array, id) {
