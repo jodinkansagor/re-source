@@ -89,7 +89,7 @@ const transitionProjects = {
     address: '650 NW Irving St',
     description: 'Clothes and showers available daily. Short-term residential programs: Clar Center(self-id. men only), Doreen\'s Place(self-id men), Jean\'s Place(self-id women). Emergency shelters: Laurelwood Center (self-id women, couples), SOS (self-id women), Willamette(coupled, singe sel-id women), Walnut Park(all genders, couples). Shelter hours, services, location vary. Call or come in for more info',
     hours: 'resource center hours 8a.m.-4p.m. daily',
-    transit: "Bus: 17, 33, MAX",
+    transit: 'Bus: 17, 33, MAX',
     website: 'www.tprojects.org',
     neighborhood: 'NW',
     type: ['clothing', 'shelter']
@@ -142,7 +142,7 @@ const graceMemorialEpiscopalChurch = {
     neighborhood: 'NE',
     type: ['meal']
 };
-const  cityTeamPortland = {
+const cityTeamPortland = {
     id: 'city-team-portland',
     name: 'City Team Portland',
     phone: '(503)231-9334',
@@ -168,7 +168,7 @@ const humanSolutionsFamilyCenter = {
 };
 const portlandRescueMission = {
     id: 'portland-rescue-mission',
-    name: 'Portlan Rescue Mission',
+    name: 'Portland Rescue Mission',
     phone: '(503)906-7690',
     address: '111 W Burnside',
     description: 'Emergency shelter for men only, TB card required, optional chapel service. Lottery number for beds and emergency shelter tickets handed out 5:45p.m., numbers announced 6:45p.m. Check-in hours 8p.m. Showers available for men 2-4p.m. daily.',
