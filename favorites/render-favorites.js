@@ -17,6 +17,10 @@ export function renderFavorites(parsedFavoritesArray) {
         favoriteAddress.textContent = favorite.address;
         favoritesListItem.appendChild(favoriteAddress);
 
+        const favoriteWebsite = document.createElement('p');
+        favoriteWebsite.textContent = favorite.website;
+        favoritesListItem.appendChild(favoriteWebsite);
+
         return favoritesListItem;
     }
 }
