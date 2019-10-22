@@ -55,15 +55,15 @@ export function renderDisplayPage(resource) {
 }
 
 
-function findById(id, array) {
-    for (let index = 0; index < array.length; index++) {
-        const item = array[index];
-        if (item.id === id) {
-            return item;
-        }
-    }
+// function findById(id, array) {
+//     for (let index = 0; index < array.length; index++) {
+//         const item = array[index];
+//         if (item.id === id) {
+//             return item;
+//         }
+//     }
 
-    return null;
-}
+//     return null;
+// }
 
-export default findById;
+// export default findById;
