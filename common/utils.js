@@ -7,6 +7,7 @@ export function renderDisplayPage(resource) {
     resourceListItem.appendChild(resourceName);
 
     const contactDiv = document.createElement('div');
+    resourceListItem.appendChild(contactDiv);
 
     const resourcePhone = document.createElement('p');
     resourcePhone.classList = 'phone';
@@ -54,15 +55,15 @@ export function renderDisplayPage(resource) {
 }
 
 
-// function findById(id, array) {
-//     for (let index = 0; index < array.length; index++) {
-//         const item = array[index];
-//         if (item.id === id) {
-//             return item;
-//         }
-//     }
+function findById(array, id) {
+    for (let index = 0; index < array.length; index++) {
+        const item = array[index];
+        if (item.id === id) {
+            return item;
+        }
+    }
 
-//     return null;
-// }
+    return null;
+}
 
-// export default findById;
+export default findById;

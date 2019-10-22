@@ -1,17 +1,13 @@
 import { renderFavorites } from './render-favorites.js';
 
+let favoritesArray = JSON.parse(localStorage.getItem('favoritesArray') || '[]');
+
 const grabbed = document.getElementById('favorites-list');
 
-const favoritesArray = [];
-
-const json = JSON.stringify(favoritesArray);
-localStorage.setItem('favoritesArray', json);
-
-const parsedFavoritesArray = JSON.parse(localStorage.favoritesArray);
-
-const favoritesList = renderFavorites(parsedFavoritesArray);
-grabbed.appendChild(favoritesList);
-
-// console.log(parsedFavoritesArray);
+for (let i = 0; i < favoritesArray.length; i++) {
+    const favorite = favoritesArray[i];
+    const favoriteItem = renderFavorites(favorite);
+    grabbed.appendChild(favoriteItem);
+}
 
 
