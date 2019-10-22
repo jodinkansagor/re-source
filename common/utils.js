@@ -46,7 +46,7 @@ export function renderDisplayPage(resource) {
     const resourceCheckBox = document.createElement('input');
     resourceCheckBox.type = 'checkbox';
     resourceCheckBox.classList = 'checkbox';
-    resourceCheckBox.value = 'resource.id';
+    resourceCheckBox.value = resource.id;
         
     resourceListItem.appendChild(resourceCheckBox);
 
@@ -54,7 +54,7 @@ export function renderDisplayPage(resource) {
 }
 
 
-function findById(id, array) {
+function findById(array, id) {
     for (let index = 0; index < array.length; index++) {
         const item = array[index];
         if (item.id === id) {
