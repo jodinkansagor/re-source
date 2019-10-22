@@ -1,7 +1,8 @@
 import { renderDisplayPage } from '../common/utils.js';
+import resourceArray from '../data/api.js';
 const list = document.getElementById('resource-list');
-const neighborhoodForm = document.getElementById('neighborhood-buttons');
-
+const neighborhoodSubmitButton = document.getElementById('neighborhood-button');
+const neighborhoodForm = document.getElementById('neighborhood-form');
 
 function getResults() {
     const json = localStorage.getItem('resourceArray');
@@ -21,9 +22,28 @@ for (let i = 0; i < displayResults.length; i++) {
     list.appendChild(listItem);
 }
 
-neighborhoodForm.addEventListener('change', function(event) {
-    event.preventDefault();
-    const formData = new FormData(neighborhoodForm);
-    const neighborhoodArray = formData.getAll(event.target.value);
-    console.log(neighborhoodArray);
+// const checkedBoxes = document.querySelectorAll('input[name=neighborhood]');
+// checkedBoxes.forEach(checkedBox => {
+//     checkedBox.addEventListener('change', () => {
+//         if (checkedBox.checked) {
+//             resourceArray.forEach(resource => {
+//                 if (checkedBox.value === resource.neighborhood) {
+//                     listItem.classList.add('hidden');
+//                 });
+//             })
+//     }
+// });
+// });
+
+const checkedBoxes = document.querySelectorAll('input[name=neighborhood]');
+checkedBoxes.forEach(checkedBox => {
+    checkedBox.addEventListener('change', () => {
+        if (checkedBox.checked) {
+            resourceArray.forEach(resource => {
+                if (checkedBox.value === resource.neighborhood) {
+                    listItem.classList.add('hidden');
+                }
+            })
+        }
+    }
 });
