@@ -1,6 +1,11 @@
 import resourcesArray from '../data/api.js';
 // import { saveResults } from '../results/results.js';
 
+function saveResults(resourceArray) {
+    const json = JSON.stringify(resourceArray);
+    localStorage.setItem('resourceArray', json);
+}
+
 const harrayForResults = [];
 const nodeListOfButtons = document.querySelectorAll('input');
 
@@ -13,8 +18,15 @@ nodeListOfButtons.forEach((buttonValue) => {
             if (filterResults) {
                 harrayForResults.push(resourcesArray[i]);
             }
-            return harrayForResults;
-        }
+        } 
+        console.log(harrayForResults);
+        saveResults(harrayForResults);
     });
+    
 });
-export default harrayForResults;
+
+
+
+// export default harrayForResults;
+
+//note for tomorrow - currently this function will continue to push new objects into the array and it does not take any out. meaning, if you click food and get your resutls and then go back and click medical, you will get both food and medical we can add in a button that initializes the local storage if we want.
