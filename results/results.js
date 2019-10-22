@@ -1,5 +1,7 @@
-const list = document.getElementById('resource-list');
 import { renderDisplayPage } from '../common/utils.js';
+const list = document.getElementById('resource-list');
+const neighborhoodForm = document.getElementById('neighborhood-buttons');
+
 
 function getResults() {
     const json = localStorage.getItem('resourceArray');
@@ -11,11 +13,17 @@ function getResults() {
     }
 }
 
-const newArray = getResults();
+const displayResults = getResults();
 
-console.log(newArray, 'new array');
-for (let i = 0; i < newArray.length; i++) {
-    const resource = newArray[i];
+for (let i = 0; i < displayResults.length; i++) {
+    const resource = displayResults[i];
     const listItem = renderDisplayPage(resource);
     list.appendChild(listItem);
 }
+
+neighborhoodForm.addEventListener('change', function(event) {
+    event.preventDefault();
+    const formData = new FormData(neighborhoodForm);
+    const neighborhoodArray = formData.getAll(event.target.value);
+    console.log(neighborhoodArray);
+});
