@@ -18,7 +18,7 @@ const budClarkClinic = {
     description: 'Walk-in clinic for short-term treatment for injuries, new illnesses and urgent medical needs.',
     hours: '8:00a.m.-3:30p.m. Mon.-Fri., closed 11:30a.m.-1p.m.',
     transit: 'Bus: 17; MAX Yellow, Green',
-    website: '',
+    website: 'na',
     neighborhood: 'NW',
     type: ['medical']
 };
@@ -168,7 +168,7 @@ const humanSolutionsFamilyCenter = {
 };
 const portlandRescueMission = {
     id: 'portland-rescue-mission',
-    name: 'Portlan Rescue Mission',
+    name: 'Portland Rescue Mission',
     phone: '(503)906-7690',
     address: '111 W Burnside',
     description: 'Emergency shelter for men only, TB card required, optional chapel service. Lottery number for beds and emergency shelter tickets handed out 5:45p.m., numbers announced 6:45p.m. Check-in hours 8p.m. Showers available for men 2-4p.m. daily.',
