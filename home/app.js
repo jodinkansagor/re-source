@@ -6,12 +6,13 @@ function saveResults(resourceArray) {
     localStorage.setItem('resourceArray', json);
 }
 
-const harrayForResults = [];
+let harrayForResults = [];
 const nodeListOfButtons = document.querySelectorAll('input');
 
 console.log(document);
 nodeListOfButtons.forEach((buttonValue) => {
     buttonValue.addEventListener('click', (event) => {
+        harrayForResults = [];
         const query = event.target.value;
         for (let i = 0; i < resourcesArray.length; i++) {
             const filterResults = resourcesArray[i].type.includes(query); 
