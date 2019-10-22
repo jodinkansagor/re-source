@@ -21,6 +21,7 @@ nodeListOfButtons.forEach((buttonValue) => {
         } 
         console.log(harrayForResults);
         saveResults(harrayForResults);
+        window.location = 'results';
     });
     
 });
