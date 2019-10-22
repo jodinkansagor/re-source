@@ -46,7 +46,7 @@ export function renderDisplayPage(resource) {
     const resourceCheckBox = document.createElement('input');
     resourceCheckBox.type = 'checkbox';
     resourceCheckBox.classList = 'checkbox';
-    resourceCheckBox.value = 'resource.id';
+    resourceCheckBox.value = resource.id;
         
     resourceListItem.appendChild(resourceCheckBox);
 
