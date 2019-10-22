@@ -18,7 +18,7 @@ const budClarkClinic = {
     description: 'Walk-in clinic for short-term treatment for injuries, new illnesses and urgent medical needs.',
     hours: '8:00a.m.-3:30p.m. Mon.-Fri., closed 11:30a.m.-1p.m.',
     transit: 'Bus: 17; MAX Yellow, Green',
-    website: '',
+    website: 'na',
     neighborhood: 'NW',
     type: ['medical']
 };
@@ -182,4 +182,3 @@ const portlandRescueMission = {
 const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
 
 export default resourcesArray;
-
