@@ -179,4 +179,4 @@ const portlandRescueMission = {
     type: ['shelter']
 };
 
-const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
+export const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
