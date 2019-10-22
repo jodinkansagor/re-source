@@ -1,17 +1,28 @@
 import resourcesArray from '../data/api.js';
 import findById from '../common/utils.js';
 
-const favoritesArray = [];
+let favoritesArray = [];
 
 export function addUserFavorites(resouceId){
     const favorited = findById(resourcesArray, resouceId);
 
     favoritesArray.push(favorited);
-    
-    //stretch goal? Disable check-box if user has already favorited it.
 
     const json = JSON.stringify(favoritesArray);
     localStorage.setItem('favoritesArray', json);
 }
 
-//when calling function buttonOnClick(button.value)
+
+const submitButton = document.getElementById('submit-favorites-button');
+
+submitButton.addEventListener('click', (event) => {
+    favoritesArray = [];
+    const nodeListOfCheckBoxes = document.querySelectorAll('input');
+    const query = event.target.value;
+    for (let i = 0; i < nodeListOfCheckBoxes.length; i++)
+    {
+        if (query === true) {
+            favoritesArray.push(query);
+        }
+    }
+});
