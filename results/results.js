@@ -10,15 +10,6 @@ function getResults() {
         return resource;
     }
 }
-// const json = JSON.stringify(harrayforResults);
-// localStorage.setItem('resourceArray', json);
-
-// console.log(json);
-
-// const parsedArray = JSON.parse(localStorage.harrayforResults);
-// console.log(localStorage.harrayforResults);
-// console.log(parsedArray);
-
 
 const newArray = getResults();
 
