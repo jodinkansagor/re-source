@@ -2,8 +2,6 @@ import { renderFavorites } from './render-favorites.js';
 
 const grabbed = document.getElementById('favorites-list');
 
-
-
 const favoritesArray = [{
     id: 'bud-clark-clinic',
     name: 'Bud Clark Clinic',
