@@ -9,7 +9,7 @@ function saveResults(resourceArray) {
 let harrayForResults = [];
 const nodeListOfButtons = document.querySelectorAll('input');
 
-console.log(document);
+// console.log(document);
 nodeListOfButtons.forEach((buttonValue) => {
     buttonValue.addEventListener('click', (event) => {
         harrayForResults = [];
@@ -20,7 +20,7 @@ nodeListOfButtons.forEach((buttonValue) => {
                 harrayForResults.push(resourcesArray[i]);
             }
         } 
-        console.log(harrayForResults);
+        // console.log(harrayForResults);
         saveResults(harrayForResults);
         window.location = 'results';
     });

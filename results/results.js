@@ -1,8 +1,10 @@
 import { renderDisplayPage } from '../common/utils.js';
+
 import resourceArray from '../data/api.js';
 const list = document.getElementById('resource-list');
 const neighborhoodSubmitButton = document.getElementById('neighborhood-button');
 const neighborhoodForm = document.getElementById('neighborhood-form');
+
 
 function getResults() {
     const json = localStorage.getItem('resourceArray');
@@ -14,7 +16,7 @@ function getResults() {
     }
 }
 
-const displayResults = getResults();
+export const displayResults = getResults();
 
 for (let i = 0; i < displayResults.length; i++) {
     const resource = displayResults[i];
@@ -45,5 +47,14 @@ checkedBoxes.forEach(checkedBox => {
                 }
             })
         }
+    }
+});
+
+const submitButton = document.getElementById('submit-favorites-button');
+
+submitButton.addEventListener('click', () => {
+    const nodeListOfCheckBoxes = document.querySelectorAll('#resource-list input:checked');
+    for (let i = 0; i < nodeListOfCheckBoxes.length; i++)
+    { addUserFavorites(nodeListOfCheckBoxes[i].value);
     }
 });
