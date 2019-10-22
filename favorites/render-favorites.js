@@ -18,5 +18,8 @@ export function renderFavorites(someFavoritesArray) {
         const favoriteAddress = document.createElement('p');
         favoriteName.className = favorite.address;
         favoritesListItem.appendChild(favoriteAddress);
+
+
+        return favoritesListItem;
     }
 }
