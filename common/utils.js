@@ -7,6 +7,7 @@ export function renderDisplayPage(resource) {
     resourceListItem.appendChild(resourceName);
 
     const contactDiv = document.createElement('div');
+    resourceListItem.appendChild(contactDiv);
 
     const resourcePhone = document.createElement('p');
     resourcePhone.classList = 'phone';
