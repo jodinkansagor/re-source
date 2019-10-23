@@ -43,7 +43,7 @@ const northByNortheastCommunityHealthCenter = {
     hours: '9a.m.-5p.m. Mon.-Fri.',
     transit: 'Bus: 6, 72',
     website: 'www.nxneclinic.org',
-    neighborhood: 'NE',
+    neighborhood: 'N-NE',
     type: ['medical']
 };
 const bethlehemChildrensClothesCloset = {
@@ -67,7 +67,7 @@ const mainspring = {
     hours: '10a.m.-12:45p.m. Mon.-Wed.',
     transit: 'Bus: 24, 72',
     website: 'www.mainspringpdx.org',
-    neighborhood: 'NE',
+    neighborhood: 'N-NE',
     type: ['clothing']
 };
 const stAndreBessette = {
@@ -139,7 +139,7 @@ const graceMemorialEpiscopalChurch = {
     hours: 'sack lunch 11a.m.-1p.m. on Tues.-Thurs.',
     transit: 'Bus: 8, 9, 73, 77, MAX',
     website: 'www.grace-memorial.org',
-    neighborhood: 'NE',
+    neighborhood: 'N-NE',
     type: ['meal']
 };
 const cityTeamPortland = {
@@ -163,7 +163,7 @@ const humanSolutionsFamilyCenter = {
     hours: 'call 211 for intake',
     transit: 'confidential location',
     website: 'unavailable',
-    neighborhood: 'NE',
+    neighborhood: 'N-NE',
     type: ['shelter']
 };
 const portlandRescueMission = {
