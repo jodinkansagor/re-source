@@ -4,12 +4,9 @@ export function renderDisplayPage(resource) {
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
 
-<<<<<<< HEAD
-=======
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';
     resourceListItem.appendChild(headingDiv);
->>>>>>> ba9c6a30078f098b84e8b929cde58df97f5845a0
 
     const resourceName = document.createElement('h2');
     resourceName.textContent = resource.name;
