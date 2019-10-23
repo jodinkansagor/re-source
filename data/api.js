@@ -6,7 +6,7 @@ const avelGordlyCenterForHealing = {
     description: 'Outpatient psychiatry, drug and alcohol counseling and treatment, culturally specific services. Sliding scale fee',
     hours: '8:30a.m.-5p.m. Mon.-Fri.',
     transit: 'Downtown Bus, MAX',
-    website: 'www.ohsuhealth.com/counseling',
+    website: 'http://www.ohsuhealth.com/counseling',
     neighborhood: 'SW',
     type: ['medical']
 };
@@ -18,7 +18,7 @@ const budClarkClinic = {
     description: 'Walk-in clinic for short-term treatment for injuries, new illnesses and urgent medical needs.',
     hours: '8:00a.m.-3:30p.m. Mon.-Fri., closed 11:30a.m.-1p.m.',
     transit: 'Bus: 17; MAX Yellow, Green',
-    website: 'na',
+    website: '',
     neighborhood: 'NW',
     type: ['medical']
 };
@@ -30,7 +30,7 @@ const cascadiaBHUrgentWalkInClinic = {
     description: 'Urgent mantal health needs. Selected on clinical need, may include counseling, medication prescribing, referrals to affordable mental health, medical, and substance treatment and referals to other community resources.',
     hours: '7a.m.-10:30p.m. Mon.-Sun.',
     transit: 'Bus:2',
-    website: 'www.cascadiabhc.org',
+    website: 'http://www.cascadiabhc.org',
     neighborhood: 'SE',
     type: ['medical']
 };
@@ -54,7 +54,7 @@ const bethlehemChildrensClothesCloset = {
     description: 'Enter through back parking lot. Free clothing for newborns to juniors.',
     hours: 'noon-2p.m. 4th Saturday only',
     transit: 'Bus: 9, 71',
-    website: 'www.smpdx.org',
+    website: 'http://www.smpdx.org',
     neighborhood: 'SE',
     type: ['clothing']
 };
@@ -78,7 +78,7 @@ const stAndreBessette = {
     description: 'Clothing once every 30 days, socks and hygene every 7 days, sleeping bags on Thursday.',
     hours: '9:30-11:20a.m.',
     transit: 'Bus: 12, 20, 33, 54, Downtown MAX',
-    website: 'www.saintandrechurch.org',
+    website: 'http://www.saintandrechurch.org',
     neighborhood: 'SW',
     type: ['clothing']
 };
@@ -90,7 +90,7 @@ const transitionProjects = {
     description: 'Clothes and showers available daily. Short-term residential programs: Clar Center(self-id. men only), Doreen\'s Place(self-id men), Jean\'s Place(self-id women). Emergency shelters: Laurelwood Center (self-id women, couples), SOS (self-id women), Willamette(coupled, singe self-id women), Walnut Park(all genders, couples). Shelter hours, services, location vary. Call or come in for more info',
     hours: 'resource center hours 8a.m.-4p.m. daily',
     transit: 'Bus: 17, 33, MAX',
-    website: 'www.tprojects.org',
+    website: 'http://www.tprojects.org',
     neighborhood: 'NW',
     type: ['clothing', 'shelter']
 };
@@ -102,7 +102,7 @@ const allSaintsEpiscopalChurch = {
     description: 'Hot Meals',
     hours: '11:30a.m. Sat.',
     transit: 'Bus: 19, 75',
-    website: 'www.allsaintspdx.org',
+    website: 'http://www.allsaintspdx.org',
     neighborhood: 'SE',
     type: ['meal']
 };
@@ -114,7 +114,7 @@ const blanchetHouseOfHospitality = {
     description: 'Free hot meals. No questions asked.',
     hours: '6:30-7:30a.m.(breakfast); 11:30a.m.-12:30p.m.(lunch); 5-6p.m.(dinner) Mon.-Sat.',
     transit: 'Bus: 4, 8, 35, 44, 77, MAX',
-    website: 'www.blanchethouse.org',
+    website: 'http://www.blanchethouse.org',
     neighborhood: 'NW',
     type: ['meal']
 };
@@ -126,7 +126,7 @@ const firstBaptistChurch = {
     description: 'Hot lunch',
     hours: '2-4p.m. Mon.-Thurs.',
     transit: 'Bus: 15, 51; MAX Red, Blue; Streetcar',
-    website: 'www.fbc-portland.org',
+    website: 'http://www.fbc-portland.org',
     neighborhood: 'SW',
     type: ['meal']
 };
@@ -150,7 +150,7 @@ const cityTeamPortland = {
     description: 'Men Only. Sobriety required. $5/night for shelter. Dinner, breakfast, shower included daily.',
     hours: 'shelter sign-up 5:45-6:30p.m.',
     transit: 'Bus: 6, Streetcar',
-    website: 'www.cityteam.org',
+    website: 'http://www.cityteam.org',
     neighborhood: 'SE',
     type: ['shelter']
 };
@@ -174,7 +174,7 @@ const portlandRescueMission = {
     description: 'Emergency shelter for men only, TB card required, optional chapel service. Lottery number for beds and emergency shelter tickets handed out 5:45p.m., numbers announced 6:45p.m. Check-in hours 8p.m. Showers available for men 2-4p.m. daily.',
     hours: 'guest carcenter hours: 2-4p.m.; lobby drop-in 24hours',
     transit: 'Bus: 12, 19, 20, MAX',
-    website: 'www.portlandrescuemission.org',
+    website: 'http://www.portlandrescuemission.org',
     neighborhood: 'SW',
     type: ['shelter']
 };
