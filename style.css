@@ -28,6 +28,7 @@ h1 {
 
 
 main {
+    
     margin-top: 20vh;
     margin-bottom: 20vh;
     display: flex;
@@ -36,3 +37,8 @@ main {
     align-items: center;
     flex-wrap: wrap;
 }
+@media only screen and (min-width: 650px) {
+    main {
+        width: 100%;
+    }
+  }

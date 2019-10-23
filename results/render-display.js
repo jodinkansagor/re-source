@@ -32,7 +32,7 @@ function renderDisplayPage(resource) {
 
     const resourcePhone = document.createElement('p');
     resourcePhone.classList = 'phone';
-    resourcePhone.textContent = resource.phone;
+    resourcePhone.textContent = 'Phone: ' + resource.phone;
     contactDiv.appendChild(resourcePhone);
 
     const resourceDescription = document.createElement('p');
@@ -84,4 +84,4 @@ function renderDisplayPage(resource) {
     return resourceListItem;
 }
 
-export default renderDisplayPage;
+// export default renderDisplayPage;
