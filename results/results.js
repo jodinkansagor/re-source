@@ -49,3 +49,5 @@ submitButton.addEventListener('click', () => {
     { addUserFavorites(nodeListOfCheckBoxes[i].value);
     }
 });
+
+export { resultsDisplayer };
