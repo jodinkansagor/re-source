@@ -1,9 +1,7 @@
 import { renderDisplayPage } from '../common/utils.js';
-
+import { addUserFavorites } from '../results/makeFavesArray.js';
 import resourceArray from '../data/api.js';
 const list = document.getElementById('resource-list');
-const neighborhoodSubmitButton = document.getElementById('neighborhood-button');
-const neighborhoodForm = document.getElementById('neighborhood-form');
 
 
 function getResults() {
@@ -18,35 +16,29 @@ function getResults() {
 
 export const displayResults = getResults();
 
-for (let i = 0; i < displayResults.length; i++) {
-    const resource = displayResults[i];
-    const listItem = renderDisplayPage(resource);
-    list.appendChild(listItem);
+function resultsDisplayer(resultsArray) {
+    list.innerHTML = '';
+    for (let i = 0; i < resultsArray.length; i++) {
+        const resource = resultsArray[i];
+        const listItem = renderDisplayPage(resource);
+        list.appendChild(listItem);
+    }
 }
 
-// const checkedBoxes = document.querySelectorAll('input[name=neighborhood]');
-// checkedBoxes.forEach(checkedBox => {
-//     checkedBox.addEventListener('change', () => {
-//         if (checkedBox.checked) {
-//             resourceArray.forEach(resource => {
-//                 if (checkedBox.value === resource.neighborhood) {
-//                     listItem.classList.add('hidden');
-//                 });
-//             })
-//     }
-// });
-// });
 
-const checkedBoxes = document.querySelectorAll('input[name=neighborhood]');
-checkedBoxes.forEach(checkedBox => {
-    checkedBox.addEventListener('change', () => {
-        if (checkedBox.checked) {
-            resourceArray.forEach(resource => {
-                if (checkedBox.value === resource.neighborhood) {
-                    listItem.classList.add('hidden');
-                }
-            });
-        }
+resultsDisplayer(displayResults);
+
+const checkBoxes = document.querySelectorAll('input[name=neighborhood]');
+
+checkBoxes.forEach(checkBox => {
+    checkBox.addEventListener('change', () => {
+        const checkedBoxes = document.querySelectorAll('input[name=neighborhood]:checked');
+        const neighborhoods = [];
+        checkedBoxes.forEach(checkedBox => {
+            neighborhoods.push(checkedBox.value);
+        });
+        const results = displayResults.filter((result) => neighborhoods.includes(result.neighborhood));
+        resultsDisplayer(results);
     });
 });
 
