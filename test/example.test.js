@@ -1,5 +1,6 @@
 import resourcesArray from '../data/api.js';
-import findById, { renderDisplayPage } from '../common/utils.js';
+import findById from '../common/utils.js';
+import renderDisplayPage from '../results/render-display.js';
 import { renderFavorites } from '../favorites/render-favorites.js';
 
 

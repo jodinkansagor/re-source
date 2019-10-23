@@ -1,6 +1,4 @@
-
-
-export function renderDisplayPage(resource) {
+export default function renderDisplayPage(resource) {
   
 
     const resourceListItem = document.createElement('li');
@@ -10,7 +8,6 @@ export function renderDisplayPage(resource) {
     a.textContent = resource.name;  
     a.href = resource.website;           
     resourceListItem.appendChild(a);
-    console.log(resource.website);
 
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';

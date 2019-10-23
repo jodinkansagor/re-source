@@ -3,13 +3,18 @@ import findById from '../common/utils.js';
 
 
 
-export function addUserFavorites(resouceId){
+export function addUserFavorites(resourceId){
     let favoritesArray = JSON.parse(localStorage.getItem('favoritesArray') || '[]');
 
-    const favorited = findById(displayResults, resouceId);
+    const favorited = findById(displayResults, resourceId);
 
-    favoritesArray.push(favorited);
-
+    const found = findById(favoritesArray, favorited.id);
+    if (!found) {
+        favoritesArray.push(favorited);
+    } else {
+        return;
+    }
+    
     const json = JSON.stringify(favoritesArray);
     localStorage.setItem('favoritesArray', json);
 }
