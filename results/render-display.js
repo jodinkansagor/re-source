@@ -97,4 +97,4 @@ function renderDisplayPage(resource) {
     return resourceListItem;
 }
 
-// export default renderDisplayPage;
+export default renderDisplayPage;
