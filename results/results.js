@@ -25,6 +25,7 @@ function resultsDisplayer(resultsArray) {
     }
 }
 
+
 resultsDisplayer(displayResults);
 
 const checkBoxes = document.querySelectorAll('input[name=neighborhood]');
