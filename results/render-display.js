@@ -1,16 +1,13 @@
-
-
-export function renderDisplayPage(resource) {
+export default function renderDisplayPage(resource) {
   
 
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
 
     const a = document.createElement('a');               
-    a.textContent = resource.name;  
-    a.href = resource.website;           
+    // a.textContent = resource.name;  
+    // a.href = resource.website;           
     resourceListItem.appendChild(a);
- 
 
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';
@@ -18,6 +15,7 @@ export function renderDisplayPage(resource) {
 
     const resourceName = document.createElement('h2');
     resourceName.textContent = resource.name;
+    resourceName.href = resource.website; 
     headingDiv.appendChild(resourceName);
 
     const resourceCheckBox = document.createElement('input');
@@ -32,12 +30,13 @@ export function renderDisplayPage(resource) {
 
     const resourceWebsite = document.createElement('p');
     resourceWebsite.classList = 'website';
-    resourceWebsite.textContent = resource.website;
+    resourceWebsite.textContent = 'Website: ' + resource.website;
+    a.href = resource.website;
     contactDiv.appendChild(resourceWebsite);
 
     const resourcePhone = document.createElement('p');
     resourcePhone.classList = 'phone';
-    resourcePhone.textContent = resource.phone;
+    resourcePhone.textContent = 'Phone: ' + resource.phone;
     contactDiv.appendChild(resourcePhone);
 
     const resourceDescription = document.createElement('p');

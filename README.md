@@ -1,6 +1,6 @@
 # re-source
 
-The name of the project: Re-source
+## The name of the project: Re-source
 Names of the team members: Jasmin, Aaron, Tali, JBJ, Sam
 A description of the project: Making the rose city resource guide more accessible by digitizing it. Users choose from resource type and a given results based on their input.
  1.0.0
