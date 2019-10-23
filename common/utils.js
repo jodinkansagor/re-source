@@ -1,4 +1,5 @@
 export function renderDisplayPage(resource) {
+  
 
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
