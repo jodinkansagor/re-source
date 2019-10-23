@@ -4,11 +4,6 @@ export function renderDisplayPage(resource) {
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
 
-    const a = document.createElement('a');               
-    a.textContent = resource.name;  
-    a.href = resource.website;           
-    resourceListItem.appendChild(a);
-    console.log(resource.website);
 
     const resourceName = document.createElement('h2');
     resourceName.textContent = resource.name;
