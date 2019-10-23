@@ -22,6 +22,19 @@ const budClarkClinic = {
     neighborhood: 'NW',
     type: ['medical']
 };
+const cascadeAidsProject = {
+    id: 'cascade-aids',
+    name: 'Cascade AIDS Project',
+    phone: '(503)223-5907',
+    address: '520 NW Davis St., Ste. 215',
+    description: 'Free and confidential HIV and STI testing services. Check calendar online or call for locations/times. Education, housing, and support services for HIV-positive individuals who meet eligibility requirements. Call for intake.',
+    hours: '9a.m.-5:00p.m. Mon.-Thu. 9a.m.-3p.m. Fri.',
+    transit: 'Downtown Bus, MAX',
+    website: 'http://www.cascadeaids.org',
+    neighborhood: 'NW',
+    type: ['medical', 'shelter'],
+    lgbt: true
+};
 const cascadiaBHUrgentWalkInClinic = {
     id: 'cascadia-b-h-urgent-walk-in-clinic',
     name: 'Cascadia BH Urgent Walk-In Clinic',
@@ -82,7 +95,20 @@ const outsideIn = {
     transit: 'Downtown Bus; MAX Red, Blue',
     website: 'http://www.outsidein.org',
     neighborhood: 'SW',
-    type: ['medical']
+    type: ['medical'],
+    lgbt: true
+};
+const parkroseKitchen = {
+    id: 'parkrose-kitchen',
+    name: 'Parkrose Community Kitchen',
+    phone: 'none',
+    address: '12505 NE Halsey St.',
+    description: 'Dinner every Tuesday night from November through April.',
+    hours: 'Tuesdays 6-7p.m.',
+    transit: 'Bus: 73, 77',
+    website: 'false',
+    neighborhood: 'NE',
+    type: ['meal']
 };
 const seCommFoodPantryAndClothes = {
     id: 'se-comm-food-clothes',
@@ -214,6 +240,6 @@ const portlandRescueMission = {
     religious: true
 };
 
-const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, outsideIn, seCommFoodPantryAndClothes, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
+const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadeAidsProject, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, outsideIn, seCommFoodPantryAndClothes, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, parkroseKitchen, portlandRescueMission, cityTeamPortland];
 
 export default resourcesArray;
