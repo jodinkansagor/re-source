@@ -45,9 +45,9 @@ checkedBoxes.forEach(checkedBox => {
                 if (checkedBox.value === resource.neighborhood) {
                     listItem.classList.add('hidden');
                 }
-            })
+            });
         }
-    }
+    });
 });
 
 const submitButton = document.getElementById('submit-favorites-button');

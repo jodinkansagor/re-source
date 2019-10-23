@@ -55,18 +55,6 @@ export function renderDisplayPage(resource) {
     resourceAddress.textContent = resource.address;
     directionsDiv.appendChild(resourceAddress);
 
-
-    // const resourceDescription = document.createElement('p');
-    // resourceDescription.classList = 'description';
-    // resourceDescription.textContent = resource.description;
-    // resourceListItem.appendChild(resourceDescription);
-
-
-    // const resourceNeighborhood = document.createElement('p');
-    // resourceNeighborhood.classList = 'neighborhood';
-    // resourceNeighborhood.textContent = resource.neighborhood;
-    // resourceListItem.appendChild(resourceNeighborhood);
-
     return resourceListItem;
 }
 
