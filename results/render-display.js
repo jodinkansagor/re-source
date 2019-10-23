@@ -1,24 +1,24 @@
-
-
-export function renderDisplayPage(resource) {
+function renderDisplayPage(resource) {
   
-
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
-
-    const a = document.createElement('a');               
-    a.textContent = resource.name;  
-    a.href = resource.website;           
-    resourceListItem.appendChild(a);
-    console.log(resource.website);
 
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';
     resourceListItem.appendChild(headingDiv);
-
-    const resourceName = document.createElement('h2');
-    resourceName.textContent = resource.name;
-    headingDiv.appendChild(resourceName);
+    
+    if (resource.website === 'false') {
+        const resourceName = document.createElement('h2');
+        resourceName.textContent = resource.name;
+        headingDiv.appendChild(resourceName);
+        console.log('false', resourceName);
+    } else {
+        const a = document.createElement('a');               
+        a.textContent = resource.name;  
+        a.href = resource.website;           
+        headingDiv.appendChild(a);
+        console.log(resource.website);
+    }
 
     const resourceCheckBox = document.createElement('input');
     resourceCheckBox.type = 'checkbox';
@@ -29,11 +29,6 @@ export function renderDisplayPage(resource) {
     const contactDiv = document.createElement('div');
     contactDiv.classList = 'contact-div';
     resourceListItem.appendChild(contactDiv);
-
-    const resourceWebsite = document.createElement('p');
-    resourceWebsite.classList = 'website';
-    resourceWebsite.textContent = resource.website;
-    contactDiv.appendChild(resourceWebsite);
 
     const resourcePhone = document.createElement('p');
     resourcePhone.classList = 'phone';
@@ -66,3 +61,5 @@ export function renderDisplayPage(resource) {
 
     return resourceListItem;
 }
+
+export default renderDisplayPage;
