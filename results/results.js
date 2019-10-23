@@ -37,8 +37,8 @@ checkBoxes.forEach(checkBox => {
         checkedBoxes.forEach(checkedBox => {
             neighborhoods.push(checkedBox.value);
         });
-        const results = displayResults.filter((result) => neighborhoods.includes(result.neighborhood));
-        resultsDisplayer(results);
+        const filteredResults = displayResults.filter((result) => neighborhoods.includes(result.neighborhood));
+        resultsDisplayer(filteredResults);
     });
 });
 
@@ -50,3 +50,5 @@ submitButton.addEventListener('click', () => {
     { addUserFavorites(nodeListOfCheckBoxes[i].value);
     }
 });
+
+export { resultsDisplayer };
