@@ -24,6 +24,19 @@ function renderDisplayPage(resource) {
     resourceCheckBox.type = 'checkbox';
     resourceCheckBox.classList = 'checkbox';
     resourceCheckBox.value = resource.id;
+    
+    let favoritesArray = JSON.parse(localStorage.getItem('favoritesArray') || '[]');
+    
+    for (let i = 0; i < favoritesArray.length; i++) {
+        const favorite = favoritesArray[i];
+        
+        if (favorite.id === resourceCheckBox.value) {
+            resourceCheckBox.checked = true; 
+        } else {
+            resourceCheckBox.checked = false;
+        }
+    }
+
     headingDiv.appendChild(resourceCheckBox);
 
     const contactDiv = document.createElement('div');
