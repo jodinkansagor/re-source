@@ -1,5 +1,6 @@
 import resourcesArray from '../data/api.js';
-import findById, { renderDisplayPage } from '../common/utils.js';
+import findById from '../common/utils.js';
+import renderDisplayPage from '../results/render-display.js';
 import { renderFavorites } from '../favorites/render-favorites.js';
 
 
@@ -19,7 +20,7 @@ test('renders display page', function(assert) {
         neighborhood: 'SW',
         type: ['medical']
     };
-    const expected = '<li class="avel-gordly-center-for-healing"><h2>Avel Gordly Center for Healing</h2><p class="description">Outpatient psychiatry, drug and alcohol counseling and treatment, culturally specific services. Sliding scale fee</p><p class="hours">8:30a.m.-5p.m. Mon.-Fri.</p><p class="transit">Downtown Bus, MAX</p><p class="website">www.ohsuhealth.com/counseling</p><p class="neighborhood">SW</p><input type="checkbox" class="checkbox" value="avel-gordly-center-for-healing"></li>';
+    const expected = '<li class="avel-gordly-center-for-healing"><a href="www.ohsuhealth.com/counseling">Avel Gordly Center for Healing</a><h2>Avel Gordly Center for Healing</h2><div><p class="phone">(503)494-4745</p><p class="address">621 SW Alder St., Ste. 520</p></div><p class="description">Outpatient psychiatry, drug and alcohol counseling and treatment, culturally specific services. Sliding scale fee</p><p class="hours">8:30a.m.-5p.m. Mon.-Fri.</p><p class="transit">Downtown Bus, MAX</p><p class="website">www.ohsuhealth.com/counseling</p><p class="neighborhood">SW</p><input type="checkbox" class="checkbox" value="avel-gordly-center-for-healing"></li>';
 
     const dom = renderDisplayPage(avelGordlyCenterForHealing);
     const html = dom.outerHTML;
