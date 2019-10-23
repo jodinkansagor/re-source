@@ -87,7 +87,7 @@ const transitionProjects = {
     name: 'Transition Projects',
     phone: '(503)280-4700',
     address: '650 NW Irving St',
-    description: 'Clothes and showers available daily. Short-term residential programs: Clar Center(self-id. men only), Doreen\'s Place(self-id men), Jean\'s Place(self-id women). Emergency shelters: Laurelwood Center (self-id women, couples), SOS (self-id women), Willamette(coupled, singe sel-id women), Walnut Park(all genders, couples). Shelter hours, services, location vary. Call or come in for more info',
+    description: 'Clothes and showers available daily. Short-term residential programs: Clar Center(self-id. men only), Doreen\'s Place(self-id men), Jean\'s Place(self-id women). Emergency shelters: Laurelwood Center (self-id women, couples), SOS (self-id women), Willamette(coupled, singe self-id women), Walnut Park(all genders, couples). Shelter hours, services, location vary. Call or come in for more info',
     hours: 'resource center hours 8a.m.-4p.m. daily',
     transit: 'Bus: 17, 33, MAX',
     website: 'www.tprojects.org',
