@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../common/meyer-reset.css">
+    <link rel="stylesheet" href="../common/header.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/results/results.css">
     <title>Resource List</title>
 </head>
 <body>
@@ -15,16 +18,18 @@
         </header>
 
     <main>
-        <h2>This will be our results page</h2>
+        <div class="neighborhood-filter">
+        <h2>Neighborhood Filter</h2>
         <form id="neighborhood-buttons" class= "neighborhood-buttons">
             <label><input type="checkbox" name="neighborhood" value="NW" checked>NW</label>
             <label><input type="checkbox" name="neighborhood" value="N-NE" checked>N/NE</label>
             <label><input type="checkbox" name="neighborhood" value="SE" checked>SE</label>
             <label><input type="checkbox" name="neighborhood" value="SW" checked>SW</label>
-            <!-- <button>Update Results</button> -->
             </form>
+        </div>
         <ul id="resource-list">
         </ul>
+        
         <button id="submit-favorites-button">Add to favorites</button>
     </main>
 

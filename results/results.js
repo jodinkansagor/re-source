@@ -1,8 +1,8 @@
 import { renderDisplayPage } from '../common/utils.js';
-import { addUserFavorites } from './makeFavesArray.js';
-
+import { addUserFavorites } from '../results/makeFavesArray.js';
+import resourceArray from '../data/api.js';
 const list = document.getElementById('resource-list');
-const neighborhoodForm = document.getElementById('neighborhood-buttons');
+
 
 function getResults() {
     const json = localStorage.getItem('resourceArray');
@@ -16,17 +16,30 @@ function getResults() {
 
 export const displayResults = getResults();
 
-for (let i = 0; i < displayResults.length; i++) {
-    const resource = displayResults[i];
-    const listItem = renderDisplayPage(resource);
-    list.appendChild(listItem);
+function resultsDisplayer(resultsArray) {
+    list.innerHTML = '';
+    for (let i = 0; i < resultsArray.length; i++) {
+        const resource = resultsArray[i];
+        const listItem = renderDisplayPage(resource);
+        list.appendChild(listItem);
+    }
 }
 
-neighborhoodForm.addEventListener('change', function(event) {
-    event.preventDefault();
-    const formData = new FormData(neighborhoodForm);
-    const neighborhoodArray = formData.getAll(event.target.value);
-    console.log(neighborhoodArray);
+
+resultsDisplayer(displayResults);
+
+const checkBoxes = document.querySelectorAll('input[name=neighborhood]');
+
+checkBoxes.forEach(checkBox => {
+    checkBox.addEventListener('change', () => {
+        const checkedBoxes = document.querySelectorAll('input[name=neighborhood]:checked');
+        const neighborhoods = [];
+        checkedBoxes.forEach(checkedBox => {
+            neighborhoods.push(checkedBox.value);
+        });
+        const results = displayResults.filter((result) => neighborhoods.includes(result.neighborhood));
+        resultsDisplayer(results);
+    });
 });
 
 const submitButton = document.getElementById('submit-favorites-button');
