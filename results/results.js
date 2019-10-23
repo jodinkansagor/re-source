@@ -1,6 +1,5 @@
 import renderDisplayPage from '../results/render-display.js';
 import { addUserFavorites } from '../results/makeFavesArray.js';
-import resourceArray from '../data/api.js';
 const list = document.getElementById('resource-list');
 
 

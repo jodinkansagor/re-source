@@ -18,7 +18,7 @@ const budClarkClinic = {
     description: 'Walk-in clinic for short-term treatment for injuries, new illnesses and urgent medical needs.',
     hours: '8:00a.m.-3:30p.m. Mon.-Fri., closed 11:30a.m.-1p.m.',
     transit: 'Bus: 17; MAX Yellow, Green',
-    website: '',
+    website: 'false',
     neighborhood: 'NW',
     type: ['medical']
 };
@@ -42,7 +42,7 @@ const northByNortheastCommunityHealthCenter = {
     description: 'Primary care services provided with a focus on African-American health and management of hypertension and diabetes. Accepts OHP CareOregon. Insurance enrollment assistance for uninsured adult residents. First time patients, call.',
     hours: '9a.m.-5p.m. Mon.-Fri.',
     transit: 'Bus: 6, 72',
-    website: 'www.nxneclinic.org',
+    website: 'http://www.nxneclinic.org',
     neighborhood: 'N-NE',
     type: ['medical']
 };
@@ -66,7 +66,7 @@ const mainspring = {
     description: 'Clothing for people in need. Clothing pantry access once per month. Personal care products when available.',
     hours: '10a.m.-12:45p.m. Mon.-Wed.',
     transit: 'Bus: 24, 72',
-    website: 'www.mainspringpdx.org',
+    website: 'http://www.mainspringpdx.org',
     neighborhood: 'N-NE',
     type: ['clothing']
 };
@@ -138,7 +138,7 @@ const graceMemorialEpiscopalChurch = {
     description: 'sack lunch, one per person, once a week. Dinner at 6p.m. on Fridays',
     hours: 'sack lunch 11a.m.-1p.m. on Tues.-Thurs.',
     transit: 'Bus: 8, 9, 73, 77, MAX',
-    website: 'www.grace-memorial.org',
+    website: 'http://www.grace-memorial.org',
     neighborhood: 'N-NE',
     type: ['meal']
 };
@@ -162,7 +162,7 @@ const humanSolutionsFamilyCenter = {
     description: '24-hour shelter. Lilac Medows for families with at least on child under 18. Gresham Women\'s Shelter for self-ident. women. No walk-up access. Call 211 for eligibility/intake',
     hours: 'call 211 for intake',
     transit: 'confidential location',
-    website: 'unavailable',
+    website: 'false',
     neighborhood: 'N-NE',
     type: ['shelter']
 };
