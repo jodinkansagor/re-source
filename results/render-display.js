@@ -24,6 +24,19 @@ function renderDisplayPage(resource) {
     resourceCheckBox.type = 'checkbox';
     resourceCheckBox.classList = 'checkbox';
     resourceCheckBox.value = resource.id;
+    
+    let favoritesArray = JSON.parse(localStorage.getItem('favoritesArray') || '[]');
+    
+    for (let i = 0; i < favoritesArray.length; i++) {
+        const favorite = favoritesArray[i];
+        
+        if (favorite.id === resourceCheckBox.value) {
+            resourceCheckBox.checked = true; 
+        } else {
+            resourceCheckBox.checked = false;
+        }
+    }
+
     headingDiv.appendChild(resourceCheckBox);
 
     const contactDiv = document.createElement('div');
@@ -32,7 +45,7 @@ function renderDisplayPage(resource) {
 
     const resourcePhone = document.createElement('p');
     resourcePhone.classList = 'phone';
-    resourcePhone.textContent = resource.phone;
+    resourcePhone.textContent = 'Phone: ' + resource.phone;
     contactDiv.appendChild(resourcePhone);
 
     const resourceDescription = document.createElement('p');
@@ -84,4 +97,4 @@ function renderDisplayPage(resource) {
     return resourceListItem;
 }
 
-export default renderDisplayPage;
+// export default renderDisplayPage;
