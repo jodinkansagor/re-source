@@ -32,14 +32,20 @@ h1 {
 main {
     margin-top: 20vh;
     margin-bottom: 20vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+<<<<<<< HEAD
+    position: fixed;
+}
+=======
 }
 @media only screen and (min-width: 650px) {
     main {
         width: 100%;
     }
   }
+>>>>>>> e8a1c3733f47d290e1c0dbedfc160a08916f0d6a
