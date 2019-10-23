@@ -50,12 +50,12 @@ export function renderDisplayPage(resource) {
 
     const resourceDescription = document.createElement('p');
     resourceDescription.classList = 'description';
-    resourceDescription.textContent = resource.description;
+    resourceDescription.textContent = 'Description: ' + resource.description;
     resourceListItem.appendChild(resourceDescription);
     
     const resourceHours = document.createElement('p');
     resourceHours.classList = 'hours';
-    resourceHours.textContent = resource.hours;
+    resourceHours.textContent = 'Hours: ' + resource.hours;
     resourceListItem.appendChild(resourceHours);
 
     const directionsDiv = document.createElement('div');
@@ -64,7 +64,7 @@ export function renderDisplayPage(resource) {
 
     const resourceTransit = document.createElement('p');
     resourceTransit.classList = 'transit';
-    resourceTransit.textContent = resource.transit;
+    resourceTransit.textContent = 'Transit: ' + resource.transit;
     directionsDiv.appendChild(resourceTransit);
 
     const resourceAddress = document.createElement('p');
@@ -97,4 +97,4 @@ export function renderDisplayPage(resource) {
     return resourceListItem;
 }
 
-// export default renderDisplayPage;
+export default renderDisplayPage;
