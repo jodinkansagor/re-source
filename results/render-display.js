@@ -10,7 +10,7 @@ export function renderDisplayPage(resource) {
     a.textContent = resource.name;  
     a.href = resource.website;           
     resourceListItem.appendChild(a);
-    console.log(resource.website);
+ 
 
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';
