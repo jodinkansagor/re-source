@@ -56,7 +56,8 @@ const bethlehemChildrensClothesCloset = {
     transit: 'Bus: 9, 71',
     website: 'http://www.smpdx.org',
     neighborhood: 'SE',
-    type: ['clothing']
+    type: ['clothing'],
+    religious: true
 };
 const mainspring = {
     id: 'mainspring',
@@ -68,7 +69,8 @@ const mainspring = {
     transit: 'Bus: 24, 72',
     website: 'http://www.mainspringpdx.org',
     neighborhood: 'N-NE',
-    type: ['clothing']
+    type: ['clothing'],
+    lgbt: true
 };
 const stAndreBessette = {
     id: 'st-andre-bessette',
@@ -80,7 +82,8 @@ const stAndreBessette = {
     transit: 'Bus: 12, 20, 33, 54, Downtown MAX',
     website: 'http://www.saintandrechurch.org',
     neighborhood: 'SW',
-    type: ['clothing']
+    type: ['clothing'],
+    religious: true
 };
 const transitionProjects = {
     id: 'transition-projects',
@@ -92,7 +95,8 @@ const transitionProjects = {
     transit: 'Bus: 17, 33, MAX',
     website: 'http://www.tprojects.org',
     neighborhood: 'NW',
-    type: ['clothing', 'shelter']
+    type: ['clothing', 'shelter'],
+    lgbt: true
 };
 const allSaintsEpiscopalChurch = {
     id: 'all-saints-episcopal-church',
@@ -104,7 +108,8 @@ const allSaintsEpiscopalChurch = {
     transit: 'Bus: 19, 75',
     website: 'http://www.allsaintspdx.org',
     neighborhood: 'SE',
-    type: ['meal']
+    type: ['meal'],
+    religious: true
 };
 const blanchetHouseOfHospitality = {
     id: 'blanchet-house-of-hospitality',
@@ -128,7 +133,8 @@ const firstBaptistChurch = {
     transit: 'Bus: 15, 51; MAX Red, Blue; Streetcar',
     website: 'http://www.fbc-portland.org',
     neighborhood: 'SW',
-    type: ['meal']
+    type: ['meal'],
+    religious: true
 };
 const graceMemorialEpiscopalChurch = {
     id: 'grace-memorial-episcopal-church',
@@ -140,7 +146,8 @@ const graceMemorialEpiscopalChurch = {
     transit: 'Bus: 8, 9, 73, 77, MAX',
     website: 'http://www.grace-memorial.org',
     neighborhood: 'N-NE',
-    type: ['meal']
+    type: ['meal'],
+    religious: true
 };
 const cityTeamPortland = {
     id: 'city-team-portland',
@@ -152,19 +159,21 @@ const cityTeamPortland = {
     transit: 'Bus: 6, Streetcar',
     website: 'http://www.cityteam.org',
     neighborhood: 'SE',
-    type: ['shelter']
+    type: ['shelter'],
+    onlyMen: true
 };
 const humanSolutionsFamilyCenter = {
     id: 'human-solutions-family-center',
-    name: 'Human Solutions Family Center',
+    name: 'Human Solutions',
     phone: '(503)548-0200',
-    address: 'confidential',
-    description: '24-hour shelter. Lilac Medows for families with at least on child under 18. Gresham Women\'s Shelter for self-ident. women. No walk-up access. Call 211 for eligibility/intake',
+    address: '12350 SE Powell Blvd (Office only. Call 211 for intake.)',
+    description: '24-hour shelter. Lilac Meadows for families with at least on child under 18. Gresham Women\'s Shelter for self-ident. women. No walk-up access. Call 211 for eligibility/intake',
     hours: 'call 211 for intake',
-    transit: 'confidential location',
-    website: 'false',
+    transit: 'Bus: 9, 17, 71, MAX Blue',
+    website: 'http://www.humansolutions.org/services/homeless-services/',
     neighborhood: 'N-NE',
-    type: ['shelter']
+    type: ['shelter'],
+    onlyWomen: true,
 };
 const portlandRescueMission = {
     id: 'portland-rescue-mission',
@@ -176,7 +185,9 @@ const portlandRescueMission = {
     transit: 'Bus: 12, 19, 20, MAX',
     website: 'http://www.portlandrescuemission.org',
     neighborhood: 'SW',
-    type: ['shelter']
+    type: ['shelter'],
+    onlyMen: true,
+    religious: true
 };
 
 const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
