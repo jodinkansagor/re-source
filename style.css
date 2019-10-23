@@ -1,3 +1,6 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
 body, html {
     height: 100%;
     width: auto;
@@ -13,22 +16,20 @@ body {
 
 h1 {
     margin-left: 1%;
-    font-family:'Arial Narrow', Arial;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: -2px;
     word-spacing: -1px;
     font-variant: small-caps;
-    color: transparent;
+    /* color: transparent;
     background: #666666;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
+    -moz-background-clip: text; */
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
     font-size: 200%;
 }
 
-
 main {
-    
     margin-top: 20vh;
     margin-bottom: 20vh;
     display: flex;

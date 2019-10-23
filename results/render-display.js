@@ -1,4 +1,4 @@
-function renderDisplayPage(resource) {
+export function renderDisplayPage(resource) {
   
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
@@ -72,27 +72,27 @@ function renderDisplayPage(resource) {
     resourceAddress.textContent = resource.address;
     directionsDiv.appendChild(resourceAddress);
 
-    if (resource.onlyMen === true) {
-        const imgMen = document.createElement('img');               
-        imgMen.src = '../assets/menIcon.png';             
-        resourceListItem.appendChild(imgMen);
-        console.log('img', imgMen);
-    } if (resource.onlyWomen === true) {
-        const imgWomen = document.createElement('img');               
-        imgWomen.src = '../assets/womenIcon.png';             
-        resourceListItem.appendChild(imgWomen);
-        console.log('img', imgWomen);
-    } if (resource.lgbt === true) {
-        const imgLgbt = document.createElement('img');               
-        imgLgbt.src = '../assets/rainbow.png';             
-        resourceListItem.appendChild(imgLgbt);
-        console.log('img', imgLgbt);
-    } if (resource.religious === true) {
-        const imgReligious = document.createElement('img');               
-        imgReligious.src = '../assets/religionIcon.png';             
-        resourceListItem.appendChild(imgReligious);
-        console.log('img', imgReligious);
-    }
+    // if (resource.onlyMen === true) {
+    //     const imgMen = document.createElement('img');               
+    //     imgMen.src = '../assets/menIcon.png';             
+    //     resourceListItem.appendChild(imgMen);
+    //     console.log('img', imgMen);
+    // } if (resource.onlyWomen === true) {
+    //     const imgWomen = document.createElement('img');               
+    //     imgWomen.src = '../assets/womenIcon.png';             
+    //     resourceListItem.appendChild(imgWomen);
+    //     console.log('img', imgWomen);
+    // } if (resource.lgbt === true) {
+    //     const imgLgbt = document.createElement('img');               
+    //     imgLgbt.src = '../assets/rainbow.png';             
+    //     resourceListItem.appendChild(imgLgbt);
+    //     console.log('img', imgLgbt);
+    // } if (resource.religious === true) {
+    //     const imgReligious = document.createElement('img');               
+    //     imgReligious.src = '../assets/cross.png';             
+    //     resourceListItem.appendChild(imgReligious);
+    //     console.log('img', imgReligious);
+    // }
 
     return resourceListItem;
 }
