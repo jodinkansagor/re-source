@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 function renderDisplayPage(resource) {
+=======
+export default function renderDisplayPage(resource) {
+>>>>>>> 53be01bb8a2ed411e758b304c819d3214ff94c3f
   
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
 
+<<<<<<< HEAD
+=======
+    const a = document.createElement('a');               
+    a.textContent = resource.name;  
+    a.href = resource.website;           
+    resourceListItem.appendChild(a);
+
+>>>>>>> 53be01bb8a2ed411e758b304c819d3214ff94c3f
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';
     resourceListItem.appendChild(headingDiv);
