@@ -1,20 +1,8 @@
-<<<<<<< HEAD
 function renderDisplayPage(resource) {
-=======
-export default function renderDisplayPage(resource) {
->>>>>>> 53be01bb8a2ed411e758b304c819d3214ff94c3f
   
     const resourceListItem = document.createElement('li');
     resourceListItem.className = resource.id;
 
-<<<<<<< HEAD
-=======
-    const a = document.createElement('a');               
-    a.textContent = resource.name;  
-    a.href = resource.website;           
-    resourceListItem.appendChild(a);
-
->>>>>>> 53be01bb8a2ed411e758b304c819d3214ff94c3f
     const headingDiv = document.createElement('div');
     headingDiv.classList = 'heading-div';
     resourceListItem.appendChild(headingDiv);
@@ -70,6 +58,28 @@ export default function renderDisplayPage(resource) {
     resourceAddress.classList = 'address';
     resourceAddress.textContent = resource.address;
     directionsDiv.appendChild(resourceAddress);
+
+    if (resource.onlyMen === true) {
+        const imgMen = document.createElement('img');               
+        imgMen.src = '../assets/menIcon.png';             
+        resourceListItem.appendChild(imgMen);
+        console.log('img', imgMen);
+    } if (resource.onlyWomen === true) {
+        const imgWomen = document.createElement('img');               
+        imgWomen.src = '../assets/womenIcon.png';             
+        resourceListItem.appendChild(imgWomen);
+        console.log('img', imgWomen);
+    } if (resource.lgbt === true) {
+        const imgLgbt = document.createElement('img');               
+        imgLgbt.src = '../assets/rainbow.png';             
+        resourceListItem.appendChild(imgLgbt);
+        console.log('img', imgLgbt);
+    } if (resource.religious === true) {
+        const imgReligious = document.createElement('img');               
+        imgReligious.src = '../assets/religionIcon.png';             
+        resourceListItem.appendChild(imgReligious);
+        console.log('img', imgReligious);
+    }
 
     return resourceListItem;
 }
