@@ -72,6 +72,30 @@ const mainspring = {
     type: ['clothing'],
     lgbt: true
 };
+const outsideIn = {
+    id: 'outside-in',
+    name: 'Outside In Clinic',
+    phone: '503-535-3860',
+    address: '1132 SW 13th Ave',
+    description: 'Primary care and referrals, same day appointments. Transgender health services, syringe exchange, tattoo removal, general medicine, women\'s health care, naturopath, Medicare enrollment. Accepts most insurance. Sliding scale with $10 nominal fee.',
+    hours: 'Mon. 8:30a.m.-5:30p.m. Tue-Thu. 8:30a.m.-7:30p.m.',
+    transit: 'Downtown Bus; MAX Red, Blue',
+    website: 'http://www.outsidein.org',
+    neighborhood: 'SW',
+    type: ['medical']
+};
+const seCommFoodPantryAndClothes = {
+    id: 'se-comm-food-clothes',
+    name: 'Southeast Community Food Pantry & Clothes Closet, Inc.',
+    phone: '(503)-895-6102',
+    address: '5535 SE Rhone St.',
+    description: 'Clothing (Thursday only) and food pantry.',
+    hours: '2-7p.m. Monday and Thursday only.',
+    transit: 'Bus: 9, 14, 71',
+    website: 'http://www.southeastcommunity.org',
+    neighborhood: 'SE',
+    type: ['clothing', 'meal']
+};
 const stAndreBessette = {
     id: 'st-andre-bessette',
     name: 'St. Andre Bessette',
@@ -190,6 +214,6 @@ const portlandRescueMission = {
     religious: true
 };
 
-const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
+const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, outsideIn, seCommFoodPantryAndClothes, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, portlandRescueMission, cityTeamPortland];
 
 export default resourcesArray;
