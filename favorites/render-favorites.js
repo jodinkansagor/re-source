@@ -2,11 +2,23 @@ export function renderFavorites(favorite) {
 
     const favoritesListItem = document.createElement('li');
     favoritesListItem.classList = favorite.id;
+    const headingDiv = document.createElement('div');
+    headingDiv.classList = 'heading-div';
+    favoritesListItem.appendChild(headingDiv);
+    
+    if (favorite.website === 'false') {
+        const favoriteName = document.createElement('h2');
+        favoriteName.textContent = favorite.name;
+        headingDiv.appendChild(favoriteName);
+        console.log('false', favoriteName);
+    } else {
+        const a = document.createElement('a');               
+        a.textContent = favorite.name;  
+        a.href = favorite.website;           
+        headingDiv.appendChild(a);
+        console.log(favorite.website);
+    }
 
-    const favoriteName = document.createElement('p');
-    favoriteName.textContent = favorite.name;
-    favoriteName.classList = 'name';
-    favoritesListItem.appendChild(favoriteName);
 
     const favoritePhone = document.createElement('p');
     favoritePhone.textContent = favorite.phone;
@@ -15,10 +27,6 @@ export function renderFavorites(favorite) {
     const favoriteAddress = document.createElement('p');
     favoriteAddress.textContent = favorite.address;
     favoritesListItem.appendChild(favoriteAddress);
-
-    const favoriteWebsite = document.createElement('p');
-    favoriteWebsite.textContent = favorite.website;
-    favoritesListItem.appendChild(favoriteWebsite);
 
     return favoritesListItem;
 }

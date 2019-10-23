@@ -1,5 +1,5 @@
 import resourcesArray from '../data/api.js';
-// import { saveResults } from '../results/results.js';
+// import { saveResults } from '../results.js';
 
 function saveResults(resourceArray) {
     const json = JSON.stringify(resourceArray);
@@ -9,7 +9,7 @@ function saveResults(resourceArray) {
 let harrayForResults = [];
 const nodeListOfButtons = document.querySelectorAll('input');
 
-// console.log(document);
+
 nodeListOfButtons.forEach((buttonValue) => {
     buttonValue.addEventListener('click', (event) => {
         harrayForResults = [];
