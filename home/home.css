@@ -1,26 +1,31 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif; */
 h1 {
     margin-left: 1%;
-    font-family:'Arial Narrow', Arial;
+    font-family:'Roboto', sans-serif;
     letter-spacing: -2px;
     word-spacing: -1px;
     font-variant: small-caps;
+    justify-content: center;
 }
 
-main{
-    margin-top: 30vh;
-    display: flex;
-    width: 80%;
-    margin: auto;
-}
-
-/* grid container */
 .resource-section {
     width: 80%;
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 40% 40%;
-    grid-column-gap: 12%;
-    grid-row-gap: 12%;
+    grid-column-gap: 20%;
+    grid-row-gap: 5%;
+    width:50%;
+    height:50%;
+    object-fit:scale-down;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    margin-top: 10%;
+    margin-bottom: 20%;
 }
 
 .link {
