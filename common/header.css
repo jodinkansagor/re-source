@@ -47,7 +47,10 @@ footer {
     max-height: 10%;
     padding: 2%;
 }
-
+img.nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .nav {
     flex-direction: row;
     max-height: 50px;
