@@ -15,7 +15,8 @@ export function renderDisplayPage(resource) {
     } else {
         const a = document.createElement('a');               
         a.textContent = resource.name;  
-        a.href = resource.website;           
+        a.href = resource.website;
+        a.target = '_blank';          
         headingDiv.appendChild(a);
     }
 

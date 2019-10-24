@@ -103,6 +103,7 @@ input[type="radio"]:hover + label {
     -webkit-box-shadow: 5px 5px 19px 0px #000000; 
     box-shadow: 5px 5px 19px 0px #000000;
     transform: scale(1.05); 
+}
 
 #submit-favorites-button {
     float: right;
@@ -116,4 +117,8 @@ input[type="radio"]:hover + label {
     height: 40px;
     border-radius: 10%;
 
+}
+img.nav {
+    margin-left: 0px;
+    margin-right: 0px;
 }
