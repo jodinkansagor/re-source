@@ -82,3 +82,17 @@ h2{
     /* padding-top: 2px; */
     padding-top: 2px;
 }
+
+.new-link {
+    width: 50px
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:hover + label {
+    -webkit-box-shadow: 5px 5px 19px 0px #000000; 
+    box-shadow: 5px 5px 19px 0px #000000;
+    transform: scale(1.05); 
+}
