@@ -12,10 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Resource List</title>
 </head>
+
 <body>
     <header>
-        <img src="../assets/logorose.png" alt="logo" class="logo"/>
-        <h1>Re-Source</h1>
+        
+        <h1><img src="../assets/logorose.png" alt="logo" class="logo"/>Re-Source</h1>
         <div id="header-inputs">
             <h3 class="header-check-boxes">Neighborhood Filter</h3>
             <form id="neighborhood-buttons" class= "neighborhood-buttons">
@@ -24,7 +25,15 @@
                 <label><input type="checkbox" name="neighborhood" value="SE" checked>SE</label>
                 <label><input type="checkbox" name="neighborhood" value="SW" checked>SW</label>
             </form>
+            <h3 class="header-check-boxes">Symbol Filter</h3>
+            <form id="symbol-buttons" class= "neighborhood-buttons">
+                    <label><input type="checkbox" name="symbol" value="NW" checked>NW</label>
+                    <label><input type="checkbox" name="symbol" value="N-NE" checked>N/NE</label>
+                    <label><input type="checkbox" name="symbol" value="SE" checked>SE</label>
+                    <label><input type="checkbox" name="symbol" value="SW" checked>SW</label>
+                </form>
             <button id="submit-favorites-button">Add to favorites</button>
+        </div>
     </header>
     <main>   
         <ul id="resource-list"></ul>
@@ -35,9 +44,9 @@
                 <a href="../bathrooms/index.html"><img class="nav" src="../assets/toilet.png" alt="bathroom-map"/></a>
                 <a href="../favorites/index.html"><img class="nav" src="../assets/star.png" alt="favorites"/></a>
                 <label><input class="hidden" type="radio" name="resource" value="meal"><img src="../assets/meal.png" class="new-link" alt="meal"/></label>
-            <label><input class="hidden" type="radio" name="resource" value="medical"><img src="../assets/medical.png" class="new-link" alt="medical"/></label>
-            <label><input class="hidden" type="radio" name="resource" value="shelter"><img src="../assets/shelter.png" class="new-link" alt="shelter"/></label>
-            <label><input class="hidden" type="radio" name="resource" value="clothing"><img src="../assets/clothes.png" class="new-link" alt="clothing"/></label>
+                <label><input class="hidden" type="radio" name="resource" value="medical"><img src="../assets/medical.png" class="new-link" alt="medical"/></label>
+                <label><input class="hidden" type="radio" name="resource" value="shelter"><img src="../assets/shelter.png" class="new-link" alt="shelter"/></label>
+                <label><input class="hidden" type="radio" name="resource" value="clothing"><img src="../assets/clothes.png" class="new-link" alt="clothing"/></label>
             </nav>
     </footer>
     <script type="module" src="results.js"></script>
