@@ -1,6 +1,7 @@
 body {
     cursor: pointer;
     height: 100%;
+    margin: 15%;
 }
 
 li {
