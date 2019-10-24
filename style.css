@@ -32,6 +32,7 @@ h1 {
 main {
     margin-top: 20vh;
     margin-bottom: 20vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

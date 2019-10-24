@@ -5,18 +5,10 @@ main {
     display: block;
     font-size: 16px;
 }
-/* h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: blue;
-    padding-top: 3px;
-    padding-bottom: 10%;
-    font-size: 18px;
-    letter-spacing: .5px;
-} */
 
 .header-check-boxes {
     letter-spacing: 3px;
-    padding-top: 40%;
+    padding-bottom: 2px;
 }
 
 .neighborhood-filter {
@@ -25,7 +17,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 100px;
+}
+
+form {
+    padding-bottom: 10%;
 }
 
 ul {
@@ -35,6 +30,8 @@ ul {
     margin-top: 20vh;
     margin: auto;
     overflow: scroll;
+    letter-spacing: 1px;
+    padding: 2%;
 }
 
 .heading-div {
@@ -44,42 +41,41 @@ ul {
     align-items: center;
 }
 
-/* entire resource entry */
-li {
-    letter-spacing: 1px;
-    padding: 2%;
-    padding-top: 2px;
-}
-
 /* street address and transit */
 .directions-div {
-    /* padding: 2%;
-    padding-bottom: 2%; */
+    padding-bottom: 4px;
 }
+
 /* address and telephone number */
 .contact-div {
-    /* padding: 2%; */
+    padding-top: 4px;
     letter-spacing: 1px;
-    /* padding-top: 2px; */
+    /* padding-top: 4px; */
 }
 .phone {
     letter-spacing: 1px;
     font-size: 18px;
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 .description {
-    /* padding-top: 2%; */
+    padding-top: 5px;
     font-size: 16px;
-    padding-top: 2px;
 }
 
 .hours {
-    /* padding: 2%; */
-    padding-top: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .address {
-    /* padding-top: 2px; */
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+
+ul
+img {
+    height: 15px;
+    width: 15px;
     padding-top: 2px;
 }
