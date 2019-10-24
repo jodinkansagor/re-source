@@ -41,7 +41,7 @@ submitButton.addEventListener('click', () => {
     }
 });
 
-const nodeListOfButtons = document.querySelectorAll('input');
+const nodeListOfButtons = document.querySelectorAll('input[name=resource]');
 
 let harrayForResults = [];
 nodeListOfButtons.forEach((buttonValue) => {
