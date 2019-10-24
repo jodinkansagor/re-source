@@ -1,0 +1,32 @@
+body {
+    cursor: pointer;
+    height: 100%;
+}
+
+li {
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #EDEDED;
+    padding: 7px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+ul {
+    
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.heading-div {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+li p {
+    margin-top: 5px;
+}
+
