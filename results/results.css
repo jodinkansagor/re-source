@@ -21,11 +21,18 @@ main {
     padding-right: 40px;
 }
 
+li {
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #EDEDED;
+    padding: 7px;
+}
+
 a {
     color: rgb(45, 95, 45);
-    text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 
 form {
@@ -40,7 +47,10 @@ ul {
     overflow: scroll;
     letter-spacing: 1px;
     padding: 2%;
-    line-height: 18px;
+    line-height: 20px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
 }
 
 .heading-div {
