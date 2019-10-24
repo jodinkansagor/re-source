@@ -12,15 +12,12 @@
     <title>Resource List</title>
 </head>
 <body>
-
-        <!-- <header>
-                <img src="../assets/logorose.png" alt="logo" class="logo"/>
-                <h1>Re-Source</h1>
-        </header> -->
-
+    <header>
+        <img src="../assets/logorose.png" alt="logo" class="logo"/>
+        <h1>Re-Source</h1>
+    </header>
     <main>
-        <div class="neighborhood-filter">
-        <h1>Neighborhood Filter</h1>
+        <div class="header-check-boxes">Neighborhood Filter</div>
         <form id="neighborhood-buttons" class= "neighborhood-buttons">
             <label><input type="checkbox" name="neighborhood" value="NW" checked>NW</label>
             <label><input type="checkbox" name="neighborhood" value="N-NE" checked>N/NE</label>
@@ -42,12 +39,15 @@
         
         <button id="submit-favorites-button">Add to favorites</button>
     </main>
-
     <footer>
             <nav>
                     <a href="../"><img class="nav" src="../assets/home-icon.png" alt="home"/></a>
                     <a href="../bathrooms/index.html"><img class="nav" src="../assets/toilet.png" alt="bathroom-map"/></a>
                     <a href="../favorites/index.html"><img class="nav" src="../assets/star.png" alt="favorites"/></a>
+                    <label><input class="hidden" type="radio" name="resource" value="meal"><img src="../assets/meal.png" class="new-link" alt="meal"/></label>
+            <label><input class="hidden" type="radio" name="resource" value="medical"><img src="../assets/medical.png" class="new-link" alt="medical"/></label>
+            <label><input class="hidden" type="radio" name="resource" value="shelter"><img src="../assets/shelter.png" class="new-link" alt="shelter"/></label>
+            <label><input class="hidden" type="radio" name="resource" value="clothing"><img src="../assets/clothes.png" class="new-link" alt="clothing"/></label>
             </nav>
     </footer>
     <script type="module" src="results.js"></script>
