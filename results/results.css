@@ -90,6 +90,20 @@ img {
     padding-top: 2px;
 }
 
+
+.new-link {
+    width: 50px
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:hover + label {
+    -webkit-box-shadow: 5px 5px 19px 0px #000000; 
+    box-shadow: 5px 5px 19px 0px #000000;
+    transform: scale(1.05); 
+
 #submit-favorites-button {
     float: right;
     margin-right: 50px;
@@ -101,4 +115,5 @@ img {
     width: 90px;
     height: 40px;
     border-radius: 10%;
+
 }
