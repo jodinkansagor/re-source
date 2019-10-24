@@ -51,13 +51,24 @@ footer {
     max-height: 10%;
     padding: 2%;
 }
-
+img.nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .nav {
     flex-direction: row;
     max-height: 50px;
     border-radius: 50%;
 }
-
+.new-link {
+    border-radius: 40%;
+    border: 2px solid transparent;
+    /* height: 30px;
+    width: 30px; */
+}
+input:checked + .new-link {
+    border: 2px solid black;
+}
 .nav:hover {
     -webkit-box-shadow: 5px 5px 19px 0px #000000; 
     box-shadow: 5px 5px 19px 0px #000000;

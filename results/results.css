@@ -159,3 +159,24 @@ input[type="radio"]:hover + label {
     box-shadow: 5px 5px 19px 0px #000000;
     transform: scale(1.05); 
 }
+<<<<<<< HEAD
+=======
+
+#submit-favorites-button {
+    float: right;
+    margin-right: 50px;
+    margin-bottom: 250px;
+    background-color: #FFDE59;
+    font-weight: 800;
+    padding: 10px;
+    padding-bottom: 25px;
+    width: 90px;
+    height: 40px;
+    border-radius: 10%;
+
+}
+img.nav {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+>>>>>>> b4757d46a678686c1cb792cb49601a2b412d0dd8
