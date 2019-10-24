@@ -1,7 +1,5 @@
 /* font-family: 'Roboto', sans-serif;
-font-family: 'Open Sans', sans-serif; 
-make heading fiexd*/
-
+font-family: 'Open Sans', sans-serif; */
 
 main {
     display: block;
@@ -11,14 +9,23 @@ main {
 .header-check-boxes {
     letter-spacing: 3px;
     padding-bottom: 2px;
-}
-
-.neighborhood-filter {
     width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-weight: 900;
+}
+#neighborhood-buttons{
+    float: right;
+    padding-right: 40px;
+}
+
+a {
+    color: rgb(45, 95, 45);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
 form {
@@ -27,13 +34,13 @@ form {
 
 ul {
     display: block;
-    max-height: 60vh;
     width: 80%;
     margin-top: 20vh;
     margin: auto;
     overflow: scroll;
     letter-spacing: 1px;
     padding: 2%;
+    line-height: 18px;
 }
 
 .heading-div {
@@ -43,27 +50,27 @@ ul {
     align-items: center;
 }
 
-/* street address and transit */
 .directions-div {
     padding-bottom: 4px;
 }
 
-/* address and telephone number */
 .contact-div {
     padding-top: 4px;
     letter-spacing: 1px;
-    /* padding-top: 4px; */
 }
 .phone {
     letter-spacing: 1px;
     font-size: 18px;
     padding-top: 4px;
+    padding-bottom: 2px;
 }
 
 .description {
     padding-top: 5px;
+    padding-bottom: 2px;
     font-size: 16px;
-    max-width: 400px;
+    max-width: 300px;
+    line-height: 20px;
 }
 
 .hours {
@@ -78,20 +85,20 @@ ul {
 
 ul
 img {
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     padding-top: 2px;
 }
 
-button {
+#submit-favorites-button {
     float: right;
     margin-right: 50px;
     margin-bottom: 250px;
     background-color: #FFDE59;
     font-weight: 800;
     padding: 10px;
+    padding-bottom: 25px;
     width: 90px;
     height: 40px;
     border-radius: 10%;
-   
 }
