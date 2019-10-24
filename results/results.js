@@ -1,26 +1,10 @@
 import { renderDisplayPage } from '../results/render-display.js';
 import { addUserFavorites } from '../results/makeFavesArray.js';
 import resourcesArray from '../data/api.js';
+import { getResults, saveResults } from '../common/utils.js';
 
 
 const list = document.getElementById('resource-list');
-
-
-function getResults() {
-    const json = localStorage.getItem('resourceArray');
-    if (!json) {
-        return null;
-    } else {
-        const resource = JSON.parse(json);
-        return resource;
-    }
-}
-
-function saveResults(resourceArray) {
-    const json = JSON.stringify(resourceArray);
-    localStorage.setItem('resourceArray', json);
-}
-
 export const displayResults = getResults();
 
 function resultsDisplayer(resultsArray) {
@@ -31,7 +15,6 @@ function resultsDisplayer(resultsArray) {
         list.appendChild(listItem);
     }
 }
-
 
 resultsDisplayer(displayResults);
 
@@ -60,7 +43,7 @@ submitButton.addEventListener('click', () => {
 
 const nodeListOfButtons = document.querySelectorAll('input');
 
-let harrayForResults = []
+let harrayForResults = [];
 nodeListOfButtons.forEach((buttonValue) => {
     buttonValue.addEventListener('click', (event) => {
         harrayForResults = [];
@@ -74,7 +57,6 @@ nodeListOfButtons.forEach((buttonValue) => {
         // console.log(harrayForResults);
         saveResults(harrayForResults);
         resultsDisplayer(harrayForResults);
-        console.log(harrayForResults);
     });
     
 });
