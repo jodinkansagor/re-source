@@ -8,7 +8,8 @@ const avelGordlyCenterForHealing = {
     transit: 'Downtown Bus, MAX',
     website: 'http://www.ohsuhealth.com/counseling',
     neighborhood: 'SW',
-    type: ['medical']
+    type: ['medical'],
+    filter: []
 };
 const budClarkClinic = {
     id: 'bud-clark-clinic',
@@ -20,7 +21,8 @@ const budClarkClinic = {
     transit: 'Bus: 17; MAX Yellow, Green',
     website: 'false',
     neighborhood: 'NW',
-    type: ['medical']
+    type: ['medical'],
+    filter: []
 };
 const cascadeAidsProject = {
     id: 'cascade-aids',
@@ -33,7 +35,7 @@ const cascadeAidsProject = {
     website: 'http://www.cascadeaids.org',
     neighborhood: 'NW',
     type: ['medical', 'shelter'],
-    lgbt: true
+    filter: ['lgbt']
 };
 const cascadiaBHUrgentWalkInClinic = {
     id: 'cascadia-b-h-urgent-walk-in-clinic',
@@ -45,7 +47,8 @@ const cascadiaBHUrgentWalkInClinic = {
     transit: 'Bus:2',
     website: 'http://www.cascadiabhc.org',
     neighborhood: 'SE',
-    type: ['medical']
+    type: ['medical'],
+    filter: []
 };
 const northByNortheastCommunityHealthCenter = {
     id: 'north-by-northeast-community-health-center',
@@ -57,7 +60,8 @@ const northByNortheastCommunityHealthCenter = {
     transit: 'Bus: 6, 72',
     website: 'http://www.nxneclinic.org',
     neighborhood: 'N-NE',
-    type: ['medical']
+    type: ['medical'],
+    filter: []
 };
 const bethlehemChildrensClothesCloset = {
     id: 'bethlehem-childrens-clothes-closet',
@@ -70,7 +74,7 @@ const bethlehemChildrensClothesCloset = {
     website: 'http://www.smpdx.org',
     neighborhood: 'SE',
     type: ['clothing'],
-    religious: true
+    filter: ['lgbt']
 };
 const mainspring = {
     id: 'mainspring',
@@ -83,7 +87,7 @@ const mainspring = {
     website: 'http://www.mainspringpdx.org',
     neighborhood: 'N-NE',
     type: ['clothing'],
-    lgbt: true
+    filter: ['lgbt']
 };
 const outsideIn = {
     id: 'outside-in',
@@ -96,7 +100,7 @@ const outsideIn = {
     website: 'http://www.outsidein.org',
     neighborhood: 'SW',
     type: ['medical'],
-    lgbt: true
+    filter: ['lgbt']
 };
 const parkroseKitchen = {
     id: 'parkrose-kitchen',
@@ -108,7 +112,8 @@ const parkroseKitchen = {
     transit: 'Bus: 73, 77',
     website: 'false',
     neighborhood: 'NE',
-    type: ['meal']
+    type: ['meal'],
+    filter: []
 };
 const seCommFoodPantryAndClothes = {
     id: 'se-comm-food-clothes',
@@ -120,7 +125,8 @@ const seCommFoodPantryAndClothes = {
     transit: 'Bus: 9, 14, 71',
     website: 'http://www.southeastcommunity.org',
     neighborhood: 'SE',
-    type: ['clothing', 'meal']
+    type: ['clothing', 'meal'],
+    filter: []
 };
 const stAndreBessette = {
     id: 'st-andre-bessette',
@@ -133,7 +139,7 @@ const stAndreBessette = {
     website: 'http://www.saintandrechurch.org',
     neighborhood: 'SW',
     type: ['clothing'],
-    religious: true
+    filter: ['religious']
 };
 const transitionProjects = {
     id: 'transition-projects',
@@ -146,7 +152,7 @@ const transitionProjects = {
     website: 'http://www.tprojects.org',
     neighborhood: 'NW',
     type: ['clothing', 'shelter'],
-    lgbt: true
+    filter: ['lgbt']
 };
 const allSaintsEpiscopalChurch = {
     id: 'all-saints-episcopal-church',
@@ -159,7 +165,7 @@ const allSaintsEpiscopalChurch = {
     website: 'http://www.allsaintspdx.org',
     neighborhood: 'SE',
     type: ['meal'],
-    religious: true
+    filter: ['religious']
 };
 const blanchetHouseOfHospitality = {
     id: 'blanchet-house-of-hospitality',
@@ -171,7 +177,8 @@ const blanchetHouseOfHospitality = {
     transit: 'Bus: 4, 8, 35, 44, 77, MAX',
     website: 'http://www.blanchethouse.org',
     neighborhood: 'NW',
-    type: ['meal']
+    type: ['meal'],
+    filter: []
 };
 const firstBaptistChurch = {
     id: 'first-baptist-church',
@@ -184,7 +191,7 @@ const firstBaptistChurch = {
     website: 'http://www.fbc-portland.org',
     neighborhood: 'SW',
     type: ['meal'],
-    religious: true
+    filter: ['religious']
 };
 const graceMemorialEpiscopalChurch = {
     id: 'grace-memorial-episcopal-church',
@@ -197,7 +204,7 @@ const graceMemorialEpiscopalChurch = {
     website: 'http://www.grace-memorial.org',
     neighborhood: 'N-NE',
     type: ['meal'],
-    religious: true
+    filter: ['religious']
 };
 const cityTeamPortland = {
     id: 'city-team-portland',
@@ -210,7 +217,7 @@ const cityTeamPortland = {
     website: 'http://www.cityteam.org',
     neighborhood: 'SE',
     type: ['shelter'],
-    onlyMen: true
+    filter: ['onlyMen']
 };
 const humanSolutionsFamilyCenter = {
     id: 'human-solutions-family-center',
@@ -223,7 +230,7 @@ const humanSolutionsFamilyCenter = {
     website: 'http://www.humansolutions.org/services/homeless-services/',
     neighborhood: 'N-NE',
     type: ['shelter'],
-    onlyWomen: true,
+    filter: ['onlyWomen']
 };
 const portlandRescueMission = {
     id: 'portland-rescue-mission',
@@ -236,8 +243,7 @@ const portlandRescueMission = {
     website: 'http://www.portlandrescuemission.org',
     neighborhood: 'SW',
     type: ['shelter'],
-    onlyMen: true,
-    religious: true
+    filter: ['onlyMen', 'religious']
 };
 
 const resourcesArray = [budClarkClinic, avelGordlyCenterForHealing, cascadeAidsProject, cascadiaBHUrgentWalkInClinic, northByNortheastCommunityHealthCenter, bethlehemChildrensClothesCloset, mainspring, outsideIn, seCommFoodPantryAndClothes, transitionProjects, graceMemorialEpiscopalChurch, blanchetHouseOfHospitality, stAndreBessette, allSaintsEpiscopalChurch, firstBaptistChurch, humanSolutionsFamilyCenter, parkroseKitchen, portlandRescueMission, cityTeamPortland];

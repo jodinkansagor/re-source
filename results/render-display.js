@@ -70,29 +70,27 @@ export function renderDisplayPage(resource) {
     resourceAddress.classList = 'address';
     resourceAddress.textContent = resource.address;
     directionsDiv.appendChild(resourceAddress);
-
-    if (resource.onlyMen === true) {
-        const imgMen = document.createElement('img');               
-        imgMen.src = '../assets/menIcon.png';             
-        resourceListItem.appendChild(imgMen);
     
-    } if (resource.onlyWomen === true) {
-        const imgWomen = document.createElement('img');               
-        imgWomen.src = '../assets/womenIcon.png';             
-        resourceListItem.appendChild(imgWomen);
-      
-    } if (resource.lgbt === true) {
-        const imgLgbt = document.createElement('img');               
-        imgLgbt.src = '../assets/rainbow.png';             
-        resourceListItem.appendChild(imgLgbt);
-       
-    } if (resource.religious === true) {
-        const imgReligious = document.createElement('img');               
-        imgReligious.src = '../assets/cross.png';             
-        resourceListItem.appendChild(imgReligious);
-        
-    }
+    if (resource && resource.filter) {
 
+        if (resource.filter.includes('lgbt')) {
+            const imgLgbt = document.createElement('img');               
+            imgLgbt.src = '../assets/rainbow.png';             
+            resourceListItem.appendChild(imgLgbt);
+        } if (resource.filter.includes('onlyMen')){
+            const imgMen = document.createElement('img');               
+            imgMen.src = '../assets/menIcon.png';             
+            resourceListItem.appendChild(imgMen);
+        } if (resource.filter.includes('onlyWomen')){
+            const imgWomen = document.createElement('img');               
+            imgWomen.src = '../assets/womenIcon.png';             
+            resourceListItem.appendChild(imgWomen);
+        } if (resource.filter.includes('religious')){
+            const imgReligious = document.createElement('img');               
+            imgReligious.src = '../assets/cross.png';             
+            resourceListItem.appendChild(imgReligious);
+        } 
+    }
     return resourceListItem;
 }
 
