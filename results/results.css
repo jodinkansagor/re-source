@@ -50,9 +50,6 @@ h1 {
     font-weight: 900;
 }
 
-#neighborhood-buttons{
-    /* padding-right: 40px; */
-}
 
 #submit-favorites-button {
     background-color: #FFDE59;
@@ -159,8 +156,6 @@ input[type="radio"]:hover + label {
     box-shadow: 5px 5px 19px 0px #000000;
     transform: scale(1.05); 
 }
-<<<<<<< HEAD
-=======
 
 #submit-favorites-button {
     float: right;
@@ -179,4 +174,3 @@ img.nav {
     margin-left: 0px;
     margin-right: 0px;
 }
->>>>>>> b4757d46a678686c1cb792cb49601a2b412d0dd8
