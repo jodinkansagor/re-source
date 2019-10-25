@@ -71,7 +71,7 @@ export function renderDisplayPage(resource) {
 
     const resourceDescription = document.createElement('p');
     resourceDescription.classList = 'description';
-    resourceDescription.textContent = 'Description: ' + resource.description;
+    resourceDescription.textContent = resource.description;
     resourceListItem.appendChild(resourceDescription);
     
     const resourceHours = document.createElement('p');

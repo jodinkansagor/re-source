@@ -25,6 +25,7 @@ h1 {
     float: right;
     font-size: 40px;
     padding-bottom: 10px;
+<<<<<<< HEAD
     padding-top: 5px;
     font-family: 'Roboto', sans-serif;
     margin-left: 5px;
@@ -38,6 +39,10 @@ h1 {
 label {
     margin: 5px;
     background-color: white;
+=======
+    font-size: 200%;
+    padding-bottom: 20px;
+>>>>>>> 124eedce5714000db83829fc7489343f5d0b7c26
 }
 
 #neighborhood-buttons {
@@ -110,6 +115,7 @@ form {
     display: block;
     width: 80%;
     margin: auto;
+    margin-top: 100px;
     overflow: scroll;
     letter-spacing: 1px;
     padding: 2%;
@@ -118,7 +124,8 @@ form {
     line-height: 20px;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    max-height: 350px;
 }
 
 .heading-div {
@@ -180,7 +187,6 @@ input[type="radio"]:hover + label {
     box-shadow: 5px 5px 19px 0px #000000;
     transform: scale(1.05); 
 }
-
 img.nav {
     margin-left: 0px;
     margin-right: 0px;
