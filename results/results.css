@@ -25,24 +25,8 @@ h1 {
     float: right;
     font-size: 40px;
     padding-bottom: 10px;
-<<<<<<< HEAD
-    padding-top: 5px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 5px;
-    letter-spacing: -2px;
-    word-spacing: -1px;
-    font-variant: small-caps;
-    background-clip: text;
-    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
-}
-
-label {
-    margin: 5px;
-    background-color: white;
-=======
     font-size: 200%;
     padding-bottom: 20px;
->>>>>>> 124eedce5714000db83829fc7489343f5d0b7c26
 }
 
 #neighborhood-buttons {
