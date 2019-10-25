@@ -122,3 +122,23 @@ img.nav {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+/* input.checkbox {
+    position: absolute;
+    left: -9999px;
+    display: none;
+}
+
+input.checkbox + label {
+    background-image: url('../assets/star-unchecked.png');
+    background-color: coral;
+    height: 20px;
+    width: 20px; 
+}
+
+input.checkbox:checked + label {
+    background-image: url('../assets/star-checked.png');
+    background-color: black;
+    height: 20px;
+    width: 20px;
+} */
