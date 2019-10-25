@@ -24,6 +24,7 @@ export function renderDisplayPage(resource) {
     resourceCheckBox.type = 'checkbox';
     resourceCheckBox.classList = 'checkbox';
     resourceCheckBox.value = resource.id;
+    resourceCheckBox.id = resource.id;
     
     let favoritesArray = JSON.parse(localStorage.getItem('favoritesArray') || '[]');
     
@@ -38,6 +39,11 @@ export function renderDisplayPage(resource) {
     }
 
     headingDiv.appendChild(resourceCheckBox);
+    
+    // const checkedImageLabel = document.createElement('label');
+    // checkedImageLabel.setAttribute('for', resource.id);
+    // headingDiv.appendChild(checkedImageLabel);
+    
 
     const contactDiv = document.createElement('div');
     contactDiv.classList = 'contact-div';
