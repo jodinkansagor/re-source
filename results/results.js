@@ -32,20 +32,6 @@ checkBoxes.forEach(checkBox => {
     });
 });
 
-// const filterBoxes = document.querySelectorAll('input[name=filter]');
-
-// filterBoxes.forEach(checkBox => {
-//     checkBox.addEventListener('change', () => {
-//         const filterBoxes = document.querySelectorAll('input[name=neighborhood]:checked');
-//         const filters = [];
-//         filterBoxes.forEach(filterBox => {
-//             filters.push(filterBox.value);
-//         });
-//         const newResults = newResults.filter((result) => filters.includes(result.filter));
-//         resultsDisplayer(newResults);
-//     });
-// });
-
 const submitButton = document.getElementById('submit-favorites-button');
 
 submitButton.addEventListener('click', () => {
