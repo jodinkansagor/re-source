@@ -1,4 +1,4 @@
-Conflict Plan Notes
+## Conflict Plan Notes
 
 1. phrase in positives - non judgemental 
     (focus on you and your needs)
@@ -11,7 +11,7 @@ Conflict Plan Notes
     -Try to bring up issues from a place of empathy. Ask what support the individual needs.
     -If the problem persists, the group wo;; speak to Danny or a TA
 
-Communication Notes
+## Communication Notes
 1. Standardize morning/evening check in         process
         -9:00
          -1:00 (mini check-in)

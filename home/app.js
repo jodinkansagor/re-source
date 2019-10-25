@@ -1,10 +1,8 @@
 import resourcesArray from '../data/api.js';
 import { saveResults } from '../common/utils.js';
 
-
 let harrayForResults = [];
 const nodeListOfButtons = document.querySelectorAll('input');
-
 
 nodeListOfButtons.forEach((buttonValue) => {
     buttonValue.addEventListener('click', (event) => {
@@ -19,5 +17,4 @@ nodeListOfButtons.forEach((buttonValue) => {
         saveResults(harrayForResults);
         window.location = 'results';
     });
-    
 });

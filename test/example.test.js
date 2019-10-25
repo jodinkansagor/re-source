@@ -47,8 +47,6 @@ test('renders favorites page', function(assert) {
     assert.equal(html, expected);
 });
 
-
-
 test('find product by id returns null if not found', assert => {
     const id = 'not found';
     const expected = null;
