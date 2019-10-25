@@ -39,6 +39,27 @@ export function renderDisplayPage(resource) {
 
     headingDiv.appendChild(resourceCheckBox);
 
+    if (resource.onlyMen === true) {
+        const imgMen = document.createElement('img');               
+        imgMen.src = '../assets/menIcon.png';             
+        resourceListItem.appendChild(imgMen);
+    
+    } if (resource.onlyWomen === true) {
+        const imgWomen = document.createElement('img');               
+        imgWomen.src = '../assets/womenIcon.png';             
+        resourceListItem.appendChild(imgWomen);
+      
+    } if (resource.lgbt === true) {
+        const imgLgbt = document.createElement('img');               
+        imgLgbt.src = '../assets/rainbow.png';             
+        resourceListItem.appendChild(imgLgbt);
+       
+    } if (resource.religious === true) {
+        const imgReligious = document.createElement('img');               
+        imgReligious.src = '../assets/cross.png';             
+        resourceListItem.appendChild(imgReligious);
+    }
+
     const contactDiv = document.createElement('div');
     contactDiv.classList = 'contact-div';
     resourceListItem.appendChild(contactDiv);

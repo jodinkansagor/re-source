@@ -9,3 +9,5 @@ for (let i = 0; i < favoritesArray.length; i++) {
     const favoriteItem = renderFavorites(favorite);
     grabbed.appendChild(favoriteItem);
 }
+
+

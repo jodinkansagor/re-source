@@ -1,3 +1,4 @@
+
 header{
     display: flex;
     flex-direction: row;
@@ -44,12 +45,10 @@ footer {
     max-height: 10%;
     padding: 2%;
 }
-
 img.nav {
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .nav {
     flex-direction: row;
     max-height: 50px;
@@ -63,7 +62,6 @@ img.nav {
 input:checked + .new-link {
     border: 2px solid black;
 }
-
 .nav:hover {
     -webkit-box-shadow: 5px 5px 19px 0px #000000; 
     box-shadow: 5px 5px 19px 0px #000000;
@@ -71,12 +69,14 @@ input:checked + .new-link {
 }
 
 body {
+
     height: 100%;
     margin: 5%;
 }
 
 main {
     overflow-y: scroll;
+
 }
 
 li {
@@ -94,12 +94,16 @@ li {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 ul {
     padding: 10px;
+
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 45px;
+
 }
 
 .heading-div {

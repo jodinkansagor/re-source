@@ -1,4 +1,5 @@
 export function renderFavorites(favorite) {
+
     const favoritesListItem = document.createElement('li');
     favoritesListItem.classList = favorite.id;
     const headingDiv = document.createElement('div');
@@ -15,6 +16,7 @@ export function renderFavorites(favorite) {
         a.href = favorite.website;           
         headingDiv.appendChild(a);
     }
+
 
     const favoritePhone = document.createElement('p');
     favoritePhone.classList = 'phone';
