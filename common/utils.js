@@ -5,7 +5,6 @@ function findById(array, id) {
             return item;
         }
     }
-
     return null;
 }
 
@@ -23,6 +22,5 @@ export function saveResults(resourceArray) {
     const json = JSON.stringify(resourceArray);
     localStorage.setItem('resourceArray', json);
 }
-
 
 export default findById;
