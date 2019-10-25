@@ -54,11 +54,9 @@ nodeListOfButtons.forEach((buttonValue) => {
                 harrayForResults.push(resourcesArray[i]);
             }
         } 
-        // console.log(harrayForResults);
         saveResults(harrayForResults);
         resultsDisplayer(harrayForResults);
     });
-    
 });
 
 export { resultsDisplayer };
