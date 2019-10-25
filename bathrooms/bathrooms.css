@@ -1,0 +1,14 @@
+footer {
+    position: fixed;
+    z-index: 10;
+}
+iframe {
+    margin-top: 40%;
+    margin-bottom: 20%;
+}
+
+.nav:hover {
+    -webkit-box-shadow: 5px 5px 19px 0px #000000; 
+    box-shadow: 5px 5px 19px 0px #000000;
+    transform: scale(1.05); 
+}

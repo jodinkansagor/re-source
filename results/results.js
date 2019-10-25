@@ -1,19 +1,10 @@
 import { renderDisplayPage } from '../results/render-display.js';
 import { addUserFavorites } from '../results/makeFavesArray.js';
+import resourcesArray from '../data/api.js';
+import { getResults, saveResults } from '../common/utils.js';
+
 
 const list = document.getElementById('resource-list');
-
-
-function getResults() {
-    const json = localStorage.getItem('resourceArray');
-    if (!json) {
-        return null;
-    } else {
-        const resource = JSON.parse(json);
-        return resource;
-    }
-}
-
 export const displayResults = getResults();
 
 function resultsDisplayer(resultsArray) {
@@ -24,7 +15,6 @@ function resultsDisplayer(resultsArray) {
         list.appendChild(listItem);
     }
 }
-
 
 resultsDisplayer(displayResults);
 
@@ -42,6 +32,20 @@ checkBoxes.forEach(checkBox => {
     });
 });
 
+// const filterBoxes = document.querySelectorAll('input[name=filter]');
+
+// filterBoxes.forEach(checkBox => {
+//     checkBox.addEventListener('change', () => {
+//         const filterBoxes = document.querySelectorAll('input[name=neighborhood]:checked');
+//         const filters = [];
+//         filterBoxes.forEach(filterBox => {
+//             filters.push(filterBox.value);
+//         });
+//         const newResults = newResults.filter((result) => filters.includes(result.filter));
+//         resultsDisplayer(newResults);
+//     });
+// });
+
 const submitButton = document.getElementById('submit-favorites-button');
 
 submitButton.addEventListener('click', () => {
@@ -49,6 +53,26 @@ submitButton.addEventListener('click', () => {
     for (let i = 0; i < nodeListOfCheckBoxes.length; i++)
     { addUserFavorites(nodeListOfCheckBoxes[i].value);
     }
+});
+
+const nodeListOfButtons = document.querySelectorAll('input[name=resource]');
+
+let harrayForResults = [];
+nodeListOfButtons.forEach((buttonValue) => {
+    buttonValue.addEventListener('click', (event) => {
+        harrayForResults = [];
+        const query = event.target.value;
+        for (let i = 0; i < resourcesArray.length; i++) {
+            const filterResults = resourcesArray[i].type.includes(query); 
+            if (filterResults) {
+                harrayForResults.push(resourcesArray[i]);
+            }
+        } 
+        // console.log(harrayForResults);
+        saveResults(harrayForResults);
+        resultsDisplayer(harrayForResults);
+    });
+    
 });
 
 export { resultsDisplayer };

@@ -15,7 +15,8 @@ export function renderDisplayPage(resource) {
     } else {
         const a = document.createElement('a');               
         a.textContent = resource.name;  
-        a.href = resource.website;           
+        a.href = resource.website;
+        a.target = '_blank';          
         headingDiv.appendChild(a);
     }
 
@@ -38,39 +39,6 @@ export function renderDisplayPage(resource) {
 
     headingDiv.appendChild(resourceCheckBox);
 
-    const contactDiv = document.createElement('div');
-    contactDiv.classList = 'contact-div';
-    resourceListItem.appendChild(contactDiv);
-
-    const resourcePhone = document.createElement('p');
-    resourcePhone.classList = 'phone';
-    resourcePhone.textContent = 'Phone: ' + resource.phone;
-    contactDiv.appendChild(resourcePhone);
-
-    const resourceDescription = document.createElement('p');
-    resourceDescription.classList = 'description';
-    resourceDescription.textContent = 'Description: ' + resource.description;
-    resourceListItem.appendChild(resourceDescription);
-    
-    const resourceHours = document.createElement('p');
-    resourceHours.classList = 'hours';
-    resourceHours.textContent = 'Hours: ' + resource.hours;
-    resourceListItem.appendChild(resourceHours);
-
-    const directionsDiv = document.createElement('div');
-    directionsDiv.classList = 'directions-div';
-    resourceListItem.appendChild(directionsDiv);
-
-    const resourceTransit = document.createElement('p');
-    resourceTransit.classList = 'transit';
-    resourceTransit.textContent = 'Transit: ' + resource.transit;
-    directionsDiv.appendChild(resourceTransit);
-
-    const resourceAddress = document.createElement('p');
-    resourceAddress.classList = 'address';
-    resourceAddress.textContent = resource.address;
-    directionsDiv.appendChild(resourceAddress);
-
     if (resource.onlyMen === true) {
         const imgMen = document.createElement('img');               
         imgMen.src = '../assets/menIcon.png';             
@@ -90,9 +58,61 @@ export function renderDisplayPage(resource) {
         const imgReligious = document.createElement('img');               
         imgReligious.src = '../assets/cross.png';             
         resourceListItem.appendChild(imgReligious);
-        
     }
 
+    const contactDiv = document.createElement('div');
+    contactDiv.classList = 'contact-div';
+    resourceListItem.appendChild(contactDiv);
+
+    const resourcePhone = document.createElement('p');
+    resourcePhone.classList = 'phone';
+    resourcePhone.textContent = '📞: ' + resource.phone;
+    contactDiv.appendChild(resourcePhone);
+
+    const resourceDescription = document.createElement('p');
+    resourceDescription.classList = 'description';
+    resourceDescription.textContent = resource.description;
+    resourceListItem.appendChild(resourceDescription);
+    
+    const resourceHours = document.createElement('p');
+    resourceHours.classList = 'hours';
+    resourceHours.textContent = '🕔: ' + resource.hours;
+    resourceListItem.appendChild(resourceHours);
+
+    const directionsDiv = document.createElement('div');
+    directionsDiv.classList = 'directions-div';
+    resourceListItem.appendChild(directionsDiv);
+
+    const resourceTransit = document.createElement('p');
+    resourceTransit.classList = 'transit';
+    resourceTransit.textContent = '🚍: ' + resource.transit;
+    directionsDiv.appendChild(resourceTransit);
+
+    const resourceAddress = document.createElement('p');
+    resourceAddress.classList = 'address';
+    resourceAddress.textContent = '📮:' + resource.address;
+    directionsDiv.appendChild(resourceAddress);
+    
+    if (resource && resource.filter) {
+
+        if (resource.filter.includes('lgbt')) {
+            const imgLgbt = document.createElement('img');               
+            imgLgbt.src = '../assets/rainbow.png';             
+            resourceListItem.appendChild(imgLgbt);
+        } if (resource.filter.includes('onlyMen')){
+            const imgMen = document.createElement('img');               
+            imgMen.src = '../assets/menIcon.png';             
+            resourceListItem.appendChild(imgMen);
+        } if (resource.filter.includes('onlyWomen')){
+            const imgWomen = document.createElement('img');               
+            imgWomen.src = '../assets/womenIcon.png';             
+            resourceListItem.appendChild(imgWomen);
+        } if (resource.filter.includes('religious')){
+            const imgReligious = document.createElement('img');               
+            imgReligious.src = '../assets/cross.png';             
+            resourceListItem.appendChild(imgReligious);
+        } 
+    }
     return resourceListItem;
 }
 
