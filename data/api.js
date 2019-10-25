@@ -228,7 +228,7 @@ const humanSolutionsFamilyCenter = {
     hours: 'call 211 for intake',
     transit: 'Bus: 9, 17, 71, MAX Blue',
     website: 'http://www.humansolutions.org/services/homeless-services/',
-    neighborhood: 'N-NE',
+    neighborhood: 'SE',
     type: ['shelter'],
     filter: ['onlyWomen']
 };

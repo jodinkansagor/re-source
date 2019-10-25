@@ -1,5 +1,5 @@
-export class ResourceArray{
-    constructor(resources){
-        this.resources = resources.slice();
-    }
-}
+// export class ResourceArray{
+//     constructor(resources){
+//         this.resources = resources.slice();
+//     }
+// }
