@@ -18,7 +18,7 @@ test('renders display page', function(assert) {
         neighborhood: 'SW',
         type: ['medical']
     };
-    const expected = '<li class="avel-gordly-center-for-healing"><div class="heading-div"><a href="www.ohsuhealth.com/counseling">Avel Gordly Center for Healing</a><input type="checkbox" class="checkbox" value="avel-gordly-center-for-healing"></div><div class="contact-div"><p class="phone">Phone: (503)494-4745</p></div><p class="description">Description: Outpatient psychiatry, drug and alcohol counseling and treatment, culturally specific services. Sliding scale fee</p><p class="hours">Hours: 8:30a.m.-5p.m. Mon.-Fri.</p><div class="directions-div"><p class="transit">Transit: Downtown Bus, MAX</p><p class="address">621 SW Alder St., Ste. 520</p></div></li>';
+    const expected = '<li class="avel-gordly-center-for-healing"><div class="heading-div"><a href="www.ohsuhealth.com/counseling" target="_blank">Avel Gordly Center for Healing</a><input type="checkbox" class="checkbox" value="avel-gordly-center-for-healing" id="avel-gordly-center-for-healing"></div><div class="contact-div"><p class="phone">📞: (503)494-4745</p></div><p class="description">Outpatient psychiatry, drug and alcohol counseling and treatment, culturally specific services. Sliding scale fee</p><p class="hours">🕔: 8:30a.m.-5p.m. Mon.-Fri.</p><div class="directions-div"><p class="transit">🚍: Downtown Bus, MAX</p><p class="address">📮:621 SW Alder St., Ste. 520</p></div></li>';
 
     const dom = renderDisplayPage(avelGordlyCenterForHealing);
     const html = dom.outerHTML;
@@ -39,7 +39,7 @@ test('renders favorites page', function(assert) {
         neighborhood: 'SW',
         type: ['medical']
     };
-    const expected = '<li class="avel-gordly-center-for-healing"><div class="heading-div"><a href="www.ohsuhealth.com/counseling">Avel Gordly Center for Healing</a></div><p>(503)494-4745</p><p>621 SW Alder St., Ste. 520</p></li>';
+    const expected = '<li class="avel-gordly-center-for-healing"><div class="heading-div"><a href="www.ohsuhealth.com/counseling">Avel Gordly Center for Healing</a></div><p class="phone">📞: (503)494-4745</p><p class="hours">🕒: 8:30a.m.-5p.m. Mon.-Fri.</p></li>';
 
     const dom = renderFavorites(avelGordlyCenterForHealing);
     const html = dom.outerHTML;
